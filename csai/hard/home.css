@@ -1,0 +1,12 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.Level{
+    margin: 1vw;
+    font-family: "Helvetica Neue", Courier, monospace;
+}
