@@ -17,24 +17,24 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // 检查是否存在"encpass"字段
-  if (isset($_POST['encpass'])) {
-      // 获取"encpass"字段的值
-      $encryptedPassword = $_POST['encpass'];
-      echo "Encrypted Password: " . $encryptedPassword;
-  } else {
-      echo "未找到encpass字段";
-  }
-} else {
-  echo "没有收到POST请求";
-}
-if(isset($_POST['email'])&& isset($_POST['pass'] )){
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//   // 检查是否存在"encpass"字段
+//   if (isset($_POST['encpass'])) {
+//       // 获取"encpass"字段的值
+//       $encryptedPassword = $_POST['encpass'];
+//       echo "Encrypted Password: " . $encryptedPassword;
+//   } else {
+//       echo "未找到encpass字段";
+//   }
+// } else {
+//   echo "没有收到POST请求";
+// }
+if(isset($_POST['email'])&& isset($_POST['pass1'] )){
     $YourName = $conn->real_escape_string($_POST['email']);
-    $YourPass = $conn->real_escape_string($_POST['pass']);
+    $YourPass = $conn->real_escape_string($_POST['pass1']);
 
-    $sql = "INSERT INTO account (`usrname`,`password`)
-            VALUES ('$YourName', '$YourPass')";
+    $sql = "INSERT INTO account (`id`,`usrname`,`password`)
+            VALUES (1,'$YourName', '$YourPass')";
   if ($conn->query($sql) === TRUE) {
     echo "Record inserted successfully";
   } else {
