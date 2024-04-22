@@ -10,10 +10,12 @@ $servername = "172.31.2.233:8889";
 $username = "userx";
 $password = "123";
 $dbname = "userx";
-echo "test1<br>";
-// Create connection
-$conn = @new mysqli($servername, $username, $password, $dbname);
+$emailtest = $_POST["email"];
+$pass1 = $_POST["pass1"];
+echo var_dump($emailtest)."<br>".var_dump($pass1)."<br>";
 
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -31,11 +33,7 @@ if ($conn->connect_error) {
 //   echo "没有收到POST请求";
 // }
 if(isset($_POST['email'])&& isset($_POST['pass1'] )){
-    $YourName = $conn->real_escape_string($_POST['email']);
-    $YourPass = $conn->real_escape_string($_POST['pass1']);
-
-    $sql = "INSERT INTO account (`id`,`email`,`password`)
-            VALUES (1,'$YourName', '$YourPass')";
+  $sql = "INSERT INTO account (`id`,`email`,`password`) VALUES (2,'$emailtest', '$pass1')";
   if ($conn->query($sql) === TRUE) {
     echo "Record inserted successfully";
   } else {
