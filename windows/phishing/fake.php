@@ -6,30 +6,27 @@
 </head>
 <body>
 <?php
-
-if(!empty($_SERVER['HTTP_CLIENT_IP'])){
-  $myip = $_SERVER['HTTP_CLIENT_IP'];
-}else if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
-  $myip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-}else{
-  $myip= $_SERVER['REMOTE_ADDR'];
-}
-echo $myip;
-echo "<br>test<br>";
-
 $servername = "172.29.7.8:3306";
-$username = "uesrx";
+$username = "userx";
 $password = "123";
-$dbname = "uesrx";
-
+$dbname = "userx";
+echo "test1<br>";
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = @new mysqli($servername, $username, $password, $dbname);
+
 // Check connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 // if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//   echo $_SERVER["REQUEST_METHOD"]."<br>";
+//   // 检查是否存在"encpass"字段
+//   if (isset($_POST['encpass'])) {
+//       // 获取"encpass"字段的值
+//       $encryptedPassword = $_POST['encpass'];
+//       echo "Encrypted Password: " . $encryptedPassword;
+//   } else {
+//       echo "未找到encpass字段";
+//   }
 // } else {
 //   echo "没有收到POST请求";
 // }
@@ -38,7 +35,7 @@ if(isset($_POST['email'])&& isset($_POST['pass1'] )){
     $YourPass = $conn->real_escape_string($_POST['pass1']);
 
     $sql = "INSERT INTO account (`id`,`email`,`password`)
-            VALUES (2,'$YourName', '$YourPass')";
+            VALUES (1,'$YourName', '$YourPass')";
   if ($conn->query($sql) === TRUE) {
     echo "Record inserted successfully";
   } else {
