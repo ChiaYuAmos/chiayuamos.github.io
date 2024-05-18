@@ -1,0 +1,10 @@
+URL,Domain,TLD,URLSimilarityIndex,NoOfOtherSpecialCharsInURL,SpacialCharRatioInURL,IsHTTPS,LineOfCode,Title,DomainTitleMatchScore,URLTitleMatchScore,IsResponsive,HasDescription,HasSocialNet,HasSubmitButton,HasCopyrightInfo,NoOfImage,NoOfJS,NoOfSelfRef
+https://www.facebook.com/?locale=zh_TW,facebook,com,0.34782608695652173,6,0.15789473684210525,1,22,Facebook - 登入或註冊,0.5833333333333334,0.25925925925925924,0,1,1,1,1,2,16,18
+https://www.facebook.com/,facebook,com,0.48484848484848486,4,0.16,1,22,Facebook - 登入或註冊,0.5833333333333334,0.34146341463414637,0,1,1,1,1,2,16,18
+https://tw.yahoo.com/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAACt2SUKhsg8DcJfXY5-5s2iZ-XGydrFX-ceRm5xcOGCy9t54eGNqXa_yyexme5ObcZ_uptaakTIkPsSXE9hcc0BQZF3LdBt6hO2CjO-gB8b1wo3aA5qWUZaE9805-QUCpplRu-UMcSQhWD4kAqDzuCRB0Wn24VlC2gOW8pJOSZtJ,yahoo,com,0.0,10,0.03636363636363636,1,392,Yahoo奇摩,0.6666666666666666,0.028368794326241134,1,1,1,1,1,45,60,118
+https://tw.yahoo.com/,yahoo,com,0.38461538461538464,4,0.19047619047619047,1,392,Yahoo奇摩,0.6666666666666666,0.2857142857142857,1,1,1,1,1,45,60,118
+https://tw.news.yahoo.com/,yahoo,com,0.3225806451612903,4,0.15384615384615385,1,81,Yahoo奇摩新聞,0.5714285714285714,0.22857142857142856,0,1,1,1,1,54,61,261
+https://www.faceb00k.com/?locale=zh_TW,faceb00k,com,0.34782608695652173,6,0.15789473684210525,1,2,,0.0,0.0,0,0,0,0,0,0,0,0
+https://www.religionenlibertad.com,religionenlibertad,com,0.6923076923076923,3,0.08823529411764706,1,2688,Religión en Libertad | Noticias de Religión,0.4918032786885246,0.4155844155844156,1,1,1,1,1,95,31,5
+http://www.ooguy.com,ooguy,com,0.4,3,0.15,0,127,"Parked | Free Dynamic DNS | Dynu Systems, Inc.",0.05970149253731343,0.04878048780487805,0,0,0,1,1,0,12,0
+http://www.teramill.com,teramill,com,0.5161290322580645,3,0.13043478260869565,0,149,Parkovaná doména www.teramill.com,0.3902439024390244,0.5714285714285714,1,1,0,0,0,2,0,0
