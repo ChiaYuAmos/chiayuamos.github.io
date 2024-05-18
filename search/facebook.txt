@@ -1,0 +1,5 @@
+https://maps.google.com/maps?q=facebook&um=1&ie=UTF-8&ved=1t:200713&ictx=111
+/search?q=facebook&sca_esv=aa52302f45f8cf1b&sca_upv=1&tbm=shop&source=lnms&ved=1t:200713&ictx=111
+https://www.facebook.com/?locale=zh_TW
+https://zh-tw.facebook.com/login.php/
+https://m.facebook.com/login/?locale=zh_TW
