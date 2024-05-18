@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="no_js" id="facebook" lang="zh-Hant">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="default" id="meta_referrer" name="referrer"/>
+  <script nonce="0PwzEeCT">
+   function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"useTrustedTypes":false,"isTrustedTypesReportOnly":false,"ajaxpipe_token":"AXh4k7rVqwqQWjtwSFM","stack_trace_limit":30,"timesliceBufferSize":5000,"show_invariant_decoder":false,"compat_iframe_token":"AQ4wrliHqfgQM52ujks","isCQuick":false});
+  </script>
+  <script nonce="0PwzEeCT">
+   (function(a){function b(b){if(!window.openDatabase)return;b.I_AM_INCOGNITO_AND_I_REALLY_NEED_WEBSQL=function(a,b,c,d){return window.openDatabase(a,b,c,d)};window.openDatabase=function(){throw new Error()}}b(a)})(this);
+  </script>
+  <style nonce="0PwzEeCT">
+  </style>
+  <script nonce="0PwzEeCT">
+   __DEV__=0;
+  </script>
+  <noscript>
+   <meta content="0; URL=/login/?_fb_noscript=1" http-equiv="refresh"/>
+  </noscript>
+  <link crossorigin="use-credentials" href="/data/manifest/" id="MANIFEST_LINK" rel="manifest"/>
+  <title id="pageTitle">
+   登入 Facebook
+  </title>
+  <meta content="noarchive" name="bingbot"/>
+  <meta content="登入 Facebook 即可開始和親朋好友及認識的人分享聯繫。" name="description"/>
+  <meta content="Facebook" property="og:site_name"/>
+  <meta content="https://www.facebook.com/login/" property="og:url"/>
+  <meta content="zh_TW" property="og:locale"/>
+  <link href="https://www.facebook.com/login/web/" rel="canonical"/>
+  <link href="https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.ico" rel="icon"/>
+  <link data-bootloader-hash="Gd2PMWA" href="https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/1,cross/xGVbpgxTK0y.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link data-bootloader-hash="41iDNZ/" href="https://static.xx.fbcdn.net/rsrc.php/v3/yy/l/1,cross/P52EQvM7dkh.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <link data-bootloader-hash="ASKMoWR" href="https://static.xx.fbcdn.net/rsrc.php/v3/yr/l/1,cross/ZKalGSI_tfl.css?_nc_x=Ij3Wp8lg5Kz" rel="stylesheet" type="text/css"/>
+  <script data-bootloader-hash="B9wv/he" nonce="0PwzEeCT" src="https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/7iK8-lsXHFs.js?_nc_x=Ij3Wp8lg5Kz">
+  </script>
+  <script nonce="0PwzEeCT">
+   requireLazy(["HasteSupportData"],function(m){m.handle({"clpData":{"1838142":{"r":1,"s":1},"4883":{"r":1,"s":1},"1814852":{"r":1},"1837559":{"r":1},"1848815":{"r":10000,"s":1}},"gkxData":{"20935":{"result":false,"hash":null},"20939":{"result":true,"hash":null},"20940":{"result":false,"hash":null},"21043":{"result":false,"hash":null},"2199":{"result":false,"hash":null},"7742":{"result":false,"hash":null},"20836":{"result":false,"hash":null},"20936":{"result":false,"hash":null},"20948":{"result":true,"hash":null},"25572":{"result":false,"hash":null},"25571":{"result":false,"hash":null}},"justknobxData":{"2269":{"r":false}}})});requireLazy(["TimeSliceImpl","ServerJS"],function(TimeSlice,ServerJS){(new ServerJS()).handle({"define":[["cr:310",["RunWWW"],{"__rc":["RunWWW",null]},-1],["cr:1126",["TimeSliceImpl"],{"__rc":["TimeSliceImpl",null]},-1],["cr:6640",["PromiseImpl"],{"__rc":["PromiseImpl",null]},-1],["cr:7386",["clearTimeoutWWW"],{"__rc":["clearTimeoutWWW",null]},-1],["cr:7390",["setTimeoutWWW"],{"__rc":["setTimeoutWWW",null]},-1],["cr:8958",["FBJSON"],{"__rc":["FBJSON",null]},-1],["cr:1078",[],{"__rc":[null,null]},-1],["cr:1080",["unexpectedUseInComet"],{"__rc":["unexpectedUseInComet",null]},-1],["cr:6108",["CSS"],{"__rc":["CSS",null]},-1],["cr:7385",["clearIntervalWWW"],{"__rc":["clearIntervalWWW",null]},-1],["cr:7389",["setIntervalAcrossTransitionsWWW"],{"__rc":["setIntervalAcrossTransitionsWWW",null]},-1],["cr:7391",["setTimeoutAcrossTransitionsWWW"],{"__rc":["setTimeoutAcrossTransitionsWWW",null]},-1],["cr:7936",["BlueCompatRouter"],{"__rc":["BlueCompatRouter",null]},-1],["cr:8959",["DTSG"],{"__rc":["DTSG",null]},-1],["cr:8960",["DTSG_ASYNC"],{"__rc":["DTSG_ASYNC",null]},-1],["cr:696703",[],{"__rc":[null,null]},-1],["cr:708886",["EventProfilerImpl"],{"__rc":["EventProfilerImpl",null]},-1],["cr:135",["RunBlue"],{"__rc":["RunBlue",null]},-1],["cr:6669",["DataStore"],{"__rc":["DataStore",null]},-1],["ServerNonce",[],{"ServerNonce":"shX8myJPxPn4rADLN5UuBN"},141],["KSConfig",[],{"killed":{"__set":["POCKET_MONSTERS_CREATE","POCKET_MONSTERS_DELETE","POCKET_MONSTERS_UPDATE_NAME","TPA_SRT_TRANSLATION","WORKROOMS_REQUEST_TAGGING_TAG_NO_INIT_BY_VC_GALAXY"]},"ko":{"__set":["acrJTh9WGdp","1oOE64fL4wO","7r6mSP7ofr2","3sKizTQ6byg","6XsXQ2qHw8y"]}},2580],["InitialCookieConsent",[],{"deferCookies":false,"initialConsent":[1,2],"noCookies":false,"shouldShowCookieBanner":false,"shouldWaitForDeferredDatrCookie":false},4328],["CookieConsentIFrameConfig",[],{"consent_param":"FQAREhISAA==.ARZF0vmwNSQXEUCCLvcb0b_Ls4gDRYpDEPiDUd0I7gvrNNw_","allowlisted_iframes":[],"is_checkpointed":false},5540],["ServerTimeData",[],{"serverTime":1716109573046,"timeOfRequestStart":1716109573026.4,"timeOfResponseStart":1716109573026.4},5943],["URLFragmentPreludeConfig",[],{"hashtagRedirect":true,"fragBlacklist":["nonce","access_token","oauth_token","xs","checkpoint_data","code"]},137],["CometPersistQueryParams",[],{"relative":{},"domain":{}},6231],["CookieDomain",[],{"domain":"facebook.com"},6421],["GetAsyncParamsExtraData",[],{"extra_data":{"__aaid":"0"}},7511],["BootloaderConfig",[],{"deferBootloads":false,"jsRetries":[200,500],"jsRetryAbortNum":2,"jsRetryAbortTime":5,"silentDups":false,"timeout":60000,"tieredLoadingFromTier":100,"hypStep4":false,"phdOn":false,"btCutoffIndex":2281,"fastPathForAlreadyRequired":true,"earlyRequireLazy":false,"enableTimeoutLoggingForNonComet":false,"deferLongTailManifest":true,"lazySoT":false,"translationRetries":[200,500],"translationRetryAbortNum":3,"translationRetryAbortTime":50},329],["CSSLoaderConfig",[],{"timeout":5000,"modulePrefix":"BLCSS:","forcePollForBootloader":true},619],["CookieCoreConfig",[],{"c_user":{"t":31536000},"cppo":{"t":86400},"dpr":{"t":604800},"fbl_st":{"t":31536000},"i_user":{"t":31536000},"locale":{"t":604800},"m_ls":{"t":34560000},"m_pixel_ratio":{"t":604800},"noscript":{},"presence":{"t":2592000},"sfau":{},"usida":{},"vpd":{"t":5184000},"wd":{"t":604800},"wl_cbv":{"t":7776000},"x-referer":{},"x-src":{"t":1}},2104],["CurrentUserInitialData",[],{"ACCOUNT_ID":"0","USER_ID":"0","NAME":"","SHORT_NAME":null,"IS_BUSINESS_PERSON_ACCOUNT":false,"HAS_SECONDARY_BUSINESS_PERSON":false,"IS_FACEBOOK_WORK_ACCOUNT":false,"IS_INSTAGRAM_BUSINESS_PERSON":false,"IS_MESSENGER_ONLY_USER":false,"IS_DEACTIVATED_ALLOWED_ON_MESSENGER":false,"IS_MESSENGER_CALL_GUEST_USER":false,"IS_WORK_MESSENGER_CALL_GUEST_USER":false,"IS_WORKROOMS_USER":false,"APP_ID":"256281040558","IS_BUSINESS_DOMAIN":false},270],["LSD",[],{"token":"AVqgP724rwA"},323],["SiteData",[],{"server_revision":1013617112,"client_revision":1013617112,"push_phase":"C3","pkg_cohort":"BP:DEFAULT","haste_session":"19862.BP:DEFAULT.2.0..0.0","pr":1,"manifest_base_uri":"https:\/\/static.xx.fbcdn.net","manifest_origin":null,"manifest_version_prefix":null,"be_one_ahead":false,"is_rtl":false,"is_experimental_tier":false,"is_jit_warmed_up":true,"hsi":"7370634494378061155","semr_host_bucket":"3","bl_hash_version":2,"comet_env":0,"wbloks_env":false,"ef_page":null,"compose_bootloads":false,"spin":4,"__spin_r":1013617112,"__spin_b":"trunk","__spin_t":1716109573,"vip":"31.13.87.36"},317],["SprinkleConfig",[],{"param_name":"jazoest","version":2,"should_randomize":false},2111],["UserAgentData",[],{"browserArchitecture":"32","browserFullVersion":null,"browserMinorVersion":null,"browserName":"Unknown","browserVersion":null,"deviceName":"Unknown","engineName":"Unknown","engineVersion":null,"platformArchitecture":"32","platformName":"Unknown","platformVersion":null,"platformFullVersion":null},527],["PromiseUsePolyfillSetImmediateGK",[],{"www_always_use_polyfill_setimmediate":false},2190],["JSErrorLoggingConfig",[],{"appId":256281040558,"extra":[],"reportInterval":50,"sampleWeight":null,"sampleWeightKey":"__jssesw","projectBlocklist":[]},2776],["DataStoreConfig",[],{"expandoKey":"__FB_STORE","useExpando":true},2915],["CookieCoreLoggingConfig",[],{"maximumIgnorableStallMs":16.67,"sampleRate":9.7e-5,"sampleRateClassic":1.0e-10,"sampleRateFastStale":1.0e-8},3401],["ImmediateImplementationExperiments",[],{"prefer_message_channel":true},3419],["UriNeedRawQuerySVConfig",[],{"uris":["dms.netmng.com","doubleclick.net","r.msn.com","watchit.sky.com","graphite.instagram.com","www.kfc.co.th","learn.pantheon.io","www.landmarkshops.in","www.ncl.com","s0.wp.com","www.tatacliq.com","bs.serving-sys.com","kohls.com","lazada.co.th","xg4ken.com","technopark.ru","officedepot.com.mx","bestbuy.com.mx","booking.com","nibio.no","myworkdayjobs.com","united-united.com","gcc.gnu.org"]},3871],["WebConnectionClassServerGuess",[],{"connectionClass":"EXCELLENT"},4705],["BootloaderEndpointConfig",[],{"debugNoBatching":false,"maxBatchSize":-1,"endpointURI":"https:\/\/www.facebook.com\/ajax\/bootloader-endpoint\/"},5094],["BigPipeExperiments",[],{"link_images_to_pagelets":false,"enable_bigpipe_plugins":false},907],["cr:7730",["getFbtResult"],{"__rc":["getFbtResult",null]},-1],["cr:8906",["goURIWWW"],{"__rc":["goURIWWW",null]},-1],["cr:925100",["RunBlue"],{"__rc":["RunBlue",null]},-1],["cr:806696",["clearTimeoutBlue"],{"__rc":["clearTimeoutBlue",null]},-1],["cr:807042",["setTimeoutBlue"],{"__rc":["setTimeoutBlue",null]},-1],["cr:1003267",["clearIntervalBlue"],{"__rc":["clearIntervalBlue",null]},-1],["cr:896462",["setIntervalAcrossTransitionsBlue"],{"__rc":["setIntervalAcrossTransitionsBlue",null]},-1],["cr:986633",["setTimeoutAcrossTransitionsBlue"],{"__rc":["setTimeoutAcrossTransitionsBlue",null]},-1],["cr:6799",["EventProfilerAdsSessionProvider"],{"__rc":["EventProfilerAdsSessionProvider",null]},-1],["IntlVariationHoldout",[],{"disable_variation":false},6533],["IntlNumberTypeProps",["IntlCLDRNumberType01"],{"module":{"__m":"IntlCLDRNumberType01"}},7027],["AsyncRequestConfig",[],{"retryOnNetworkError":"1","useFetchStreamAjaxPipeTransport":false},328],["DTSGInitialData",[],{},258],["IntlPhonologicalRules",[],{"meta":{},"patterns":{}},1496],["IntlViewerContext",[],{"GENDER":3,"regionalLocale":null},772],["NumberFormatConfig",[],{"decimalSeparator":".","numberDelimiter":",","minDigitsForThousandsSeparator":4,"standardDecimalPatternInfo":{"primaryGroupSize":3,"secondaryGroupSize":3},"numberingSystemData":null},54],["SessionNameConfig",[],{"seed":"2qIX"},757],["ZeroCategoryHeader",[],{},1127],["ZeroRewriteRules",[],{"rewrite_rules":{},"whitelist":{"\/hr\/r":1,"\/hr\/p":1,"\/zero\/unsupported_browser\/":1,"\/zero\/policy\/optin":1,"\/zero\/optin\/write\/":1,"\/zero\/optin\/legal\/":1,"\/zero\/optin\/free\/":1,"\/about\/privacy\/":1,"\/about\/privacy\/update\/":1,"\/privacy\/explanation\/":1,"\/zero\/toggle\/welcome\/":1,"\/zero\/toggle\/nux\/":1,"\/zero\/toggle\/settings\/":1,"\/fup\/interstitial\/":1,"\/work\/landing":1,"\/work\/login\/":1,"\/work\/email\/":1,"\/ai.php":1,"\/js_dialog_resources\/dialog_descriptions_android.json":0,"\/connect\/jsdialog\/MPlatformAppInvitesJSDialog\/":0,"\/connect\/jsdialog\/MPlatformOAuthShimJSDialog\/":0,"\/connect\/jsdialog\/MPlatformLikeJSDialog\/":0,"\/qp\/interstitial\/":1,"\/qp\/action\/redirect\/":1,"\/qp\/action\/close\/":1,"\/zero\/support\/ineligible\/":1,"\/zero_balance_redirect\/":1,"\/zero_balance_redirect":1,"\/zero_balance_redirect\/l\/":1,"\/l.php":1,"\/lsr.php":1,"\/ajax\/dtsg\/":1,"\/checkpoint\/block\/":1,"\/exitdsite":1,"\/zero\/balance\/pixel\/":1,"\/zero\/balance\/":1,"\/zero\/balance\/carrier_landing\/":1,"\/zero\/flex\/logging\/":1,"\/tr":1,"\/tr\/":1,"\/sem_campaigns\/sem_pixel_test\/":1,"\/bookmarks\/flyout\/body\/":1,"\/zero\/subno\/":1,"\/confirmemail.php":1,"\/policies\/":1,"\/mobile\/internetdotorg\/classifier\/":1,"\/zero\/dogfooding":1,"\/xti.php":1,"\/zero\/fblite\/config\/":1,"\/hr\/zsh\/wc\/":1,"\/ajax\/bootloader-endpoint\/":1,"\/mobile\/zero\/carrier_page\/":1,"\/mobile\/zero\/carrier_page\/education_page\/":1,"\/mobile\/zero\/carrier_page\/feature_switch\/":1,"\/mobile\/zero\/carrier_page\/settings_page\/":1,"\/aloha_check_build":1,"\/upsell\/zbd\/softnudge\/":1,"\/mobile\/zero\/af_transition\/":1,"\/mobile\/zero\/af_transition\/action\/":1,"\/mobile\/zero\/freemium\/":1,"\/mobile\/zero\/freemium\/redirect\/":1,"\/mobile\/zero\/freemium\/zero_fup\/":1,"\/privacy\/policy\/":1,"\/privacy\/center\/":1,"\/data\/manifest\/":1,"\/4oh4.php":1,"\/autologin.php":1,"\/birthday_help.php":1,"\/checkpoint\/":1,"\/contact-importer\/":1,"\/cr.php":1,"\/legal\/terms\/":1,"\/login.php":1,"\/login\/":1,"\/mobile\/account\/":1,"\/n\/":1,"\/remote_test_device\/":1,"\/upsell\/buy\/":1,"\/upsell\/buyconfirm\/":1,"\/upsell\/buyresult\/":1,"\/upsell\/promos\/":1,"\/upsell\/continue\/":1,"\/upsell\/h\/promos\/":1,"\/upsell\/loan\/learnmore\/":1,"\/upsell\/purchase\/":1,"\/upsell\/promos\/upgrade\/":1,"\/upsell\/buy_redirect\/":1,"\/upsell\/loan\/buyconfirm\/":1,"\/upsell\/loan\/buy\/":1,"\/upsell\/sms\/":1,"\/wap\/a\/channel\/reconnect.php":1,"\/wap\/a\/nux\/wizard\/nav.php":1,"\/wap\/appreg.php":1,"\/wap\/birthday_help.php":1,"\/wap\/c.php":1,"\/wap\/confirmemail.php":1,"\/wap\/cr.php":1,"\/wap\/login.php":1,"\/wap\/r.php":1,"\/zero\/datapolicy":1,"\/a\/timezone.php":1,"\/a\/bz":1,"\/bz\/reliability":1,"\/r.php":1,"\/mr\/":1,"\/reg\/":1,"\/registration\/log\/":1,"\/terms\/":1,"\/f123\/":1,"\/expert\/":1,"\/experts\/":1,"\/terms\/index.php":1,"\/terms.php":1,"\/srr\/":1,"\/msite\/redirect\/":1,"\/fbs\/pixel\/":1,"\/contactpoint\/preconfirmation\/":1,"\/contactpoint\/cliff\/":1,"\/contactpoint\/confirm\/submit\/":1,"\/contactpoint\/confirmed\/":1,"\/contactpoint\/login\/":1,"\/preconfirmation\/contactpoint_change\/":1,"\/help\/contact\/":1,"\/survey\/":1,"\/upsell\/loyaltytopup\/accept\/":1,"\/settings\/":1,"\/lite\/":1,"\/zero_status_update\/":1,"\/operator_store\/":1,"\/upsell\/":1,"\/wifiauth\/login\/":1}},1478],["DTSGInitData",[],{"token":"","async_get_token":""},3515],["WebDriverConfig",[],{"isTestRunning":false,"isJestE2ETestRun":false,"isXRequestConfigEnabled":false,"auxiliaryServiceInfo":{},"testPath":null,"originHost":null},5332],["CurrentEnvironment",[],{"facebookdotcom":true,"messengerdotcom":false,"workplacedotcom":false,"instagramdotcom":false,"workdotmetadotcom":false,"horizondotmetadotcom":false},827],["CometAltpayJsSdkIframeAllowedDomains",[],{"allowed_domains":["https:\/\/live.adyen.com","https:\/\/integration-facebook.payu.in","https:\/\/facebook.payulatam.com","https:\/\/secure.payu.com","https:\/\/facebook.dlocal.com","https:\/\/buy2.boku.com"]},4920],["EventConfig",[],{"sampling":{"bandwidth":0,"play":0,"playing":0,"progress":0,"pause":0,"ended":0,"seeked":0,"seeking":0,"waiting":0,"loadedmetadata":0,"canplay":0,"selectionchange":0,"change":0,"timeupdate":0,"adaptation":0,"focus":0,"blur":0,"load":0,"error":0,"message":0,"abort":0,"storage":0,"scroll":200000,"mousemove":20000,"mouseover":10000,"mouseout":10000,"mousewheel":1,"MSPointerMove":10000,"keydown":0.1,"click":0.02,"mouseup":0.02,"__100ms":0.001,"__default":5000,"__min":100,"__interactionDefault":200,"__eventDefault":100000},"page_sampling_boost":1,"interaction_regexes":{},"interaction_boost":{},"event_types":{},"manual_instrumentation":false,"profile_eager_execution":false,"disable_heuristic":true,"disable_event_profiler":false},1726],["cr:1290",[],{"__rc":[null,null]},-1],["cr:8828",[],{"__rc":[null,null]},-1],["cr:1094907",[],{"__rc":[null,null]},-1],["cr:1183579",["InlineFbtResultImpl"],{"__rc":["InlineFbtResultImpl",null]},-1],["FbtResultGK",[],{"shouldReturnFbtResult":true,"inlineMode":"NO_INLINE"},876],["AdsInterfacesSessionConfig",[],{},2393],["FbtQTOverrides",[],{"overrides":{}},551],["AnalyticsCoreData",[],{"device_id":"$^|AcZAb7YwM0MGEZDnW6-t4Myo7n3Q3cLfDkYM5wen5Y2ozuhnvDgypDL9mmQZYJBZ0kzDS-X5a5NlmZb2LMs8LLySune6|fd.Acb6_anY4841yPIHlg8vEnXxvMis3zZeUoaa8HZh_boXVr9SyTksVowug1RlnUSdySc3KBKhnRmB4a8ZFtsah9l8","app_id":"256281040558","enable_bladerunner":false,"enable_ack":true,"push_phase":"C3","enable_observer":false,"enable_cmcd_observer":false,"enable_dataloss_timer":false,"enable_fallback_for_br":true,"queue_activation_experiment":false,"max_delay_br_queue":60000,"max_delay_br_queue_immediate":3,"max_delay_br_init_not_complete":3000,"consents":{},"app_universe":1,"br_stateful_migration_on":true,"enable_non_fb_br_stateless_by_default":false,"use_falco_as_mutex_key":false},5237]],"require":[["markJSEnabled"],["lowerDomain"],["URLFragmentPrelude"],["Primer"],["BigPipe"],["Bootloader"],["TimeSlice"],["AsyncRequest"],["FbtLogging"],["IntlQtEventFalcoEvent"],["RequireDeferredReference","unblock",[],[["AsyncRequest","FbtLogging","IntlQtEventFalcoEvent"],"sd"]],["RequireDeferredReference","unblock",[],[["AsyncRequest","FbtLogging","IntlQtEventFalcoEvent"],"css"]]]});});
+  </script>
+ </head>
+ <body class="_39il _97vt _97vz _97v- _97v_ _97w2 _97w0 _9ax- _9ax_ _9ay1 UIPage_LoggedOut _-kb _605a b_c3pyn-ahh x1 Locale_zh_TW" dir="ltr">
+  <script nonce="0PwzEeCT" type="text/javascript">
+   requireLazy(["bootstrapWebSession"],function(j){j(1716109573)})
+  </script>
+  <div class="_li" id="u_0_0_p7">
+   <div class="uiContextualLayerParent" id="globalContainer">
+    <div class="fb_content clearfix" id="content" role="main">
+     <div class="_4-u5 _30ny">
+      <div class="_97vy">
+       <img alt="Facebook" class="_97vu img" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"/>
+      </div>
+      <div class="_4-u2 _1w1t _4-u8 _52jv">
+       <div class="_xku" id="header_block">
+        <span class="_97w1 _50f6">
+         <div class="_9axz">
+          登入 Facebook
+         </div>
+        </span>
+       </div>
+       <div class="login_form_container">
+        <form action="/login/device-based/regular/login/?login_attempt=1&amp;lwv=100" id="login_form" method="post" onsubmit="">
+         <input autocomplete="off" name="jazoest" type="hidden" value="2902"/>
+         <input autocomplete="off" name="lsd" type="hidden" value="AVqgP724rwA"/>
+         <input autocomplete="off" id="error_box" type="hidden"/>
+         <div id="loginform">
+          <input autocomplete="off" id="display" name="display" type="hidden" value=""/>
+          <input autocomplete="off" id="isprivate" name="isprivate" type="hidden" value=""/>
+          <input autocomplete="off" id="return_session" name="return_session" type="hidden" value=""/>
+          <input autocomplete="off" id="skip_api_login" name="skip_api_login" type="hidden" value=""/>
+          <input autocomplete="off" id="signed_next" name="signed_next" type="hidden" value=""/>
+          <input autocomplete="off" id="trynum" name="trynum" type="hidden" value="1"/>
+          <input autocomplete="off" id="u_0_1_kA" name="timezone" type="hidden" value=""/>
+          <input autocomplete="off" id="u_0_2_rw" name="lgndim" type="hidden" value=""/>
+          <input name="lgnrnd" type="hidden" value="020613_eApv"/>
+          <input id="lgnjs" name="lgnjs" type="hidden" value="n"/>
+          <div class="clearfix _5466 _44mg" id="email_container">
+           <input aria-label="電子郵件地址或手機號碼" autocomplete="username" autofocus="1" class="inputtext _55r1 inputtext _1kbt inputtext _1kbt" id="email" name="email" placeholder="電子郵件地址或手機號碼" tabindex="0" type="text" value=""/>
+          </div>
+          <div class="clearfix _5466 _44mg">
+           <div>
+            <div class="_55r1 _1kbt">
+             <input aria-label="密碼" autocomplete="current-password" class="inputtext _55r1 inputtext _9npi inputtext _9npi" id="pass" name="pass" placeholder="密碼" tabindex="0" type="password" value=""/>
+             <div class="_9ls7" id="u_0_3_ZA">
+              <a href="#" role="button">
+               <div class="_9lsa">
+                <div class="_9lsb" id="u_0_4_lU">
+                </div>
+               </div>
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="_xkt">
+           <button class="_42ft _4jy0 _52e0 _4jy6 _4jy1 selected _51sy" id="loginbutton" name="login" tabindex="0" type="submit" value="1">
+            登入
+           </button>
+          </div>
+          <div class="_xkv fsm fwn fcg" id="login_link">
+           <a class="_97w4" href="https://www.facebook.com/recover/initiate/?ars=facebook_login&amp;cancel_lara_pswd=0" target="">
+            忘記帳號？
+           </a>
+           <span aria-hidden="true" role="presentation">
+            ·
+           </span>
+           <a class="_97w5" href="/r.php?locale=zh_TW&amp;display=page" rel="nofollow">
+            申請加入 Facebook
+           </a>
+          </div>
+         </div>
+         <input autocomplete="off" id="prefill_contact_point" name="prefill_contact_point" type="hidden" value=""/>
+         <input autocomplete="off" id="prefill_source" name="prefill_source" type="hidden"/>
+         <input autocomplete="off" id="prefill_type" name="prefill_type" type="hidden"/>
+         <input autocomplete="off" id="first_prefill_source" name="first_prefill_source" type="hidden"/>
+         <input autocomplete="off" id="first_prefill_type" name="first_prefill_type" type="hidden"/>
+         <input autocomplete="off" id="had_cp_prefilled" name="had_cp_prefilled" type="hidden" value="false"/>
+         <input autocomplete="off" id="had_password_prefilled" name="had_password_prefilled" type="hidden" value="false"/>
+         <input autocomplete="off" name="ab_test_data" type="hidden" value=""/>
+        </form>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="">
+     <div class="_95ke _8opy">
+      <div data-referrer="page_footer" data-testid="page_footer" id="pageFooter">
+       <ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i" data-nocookies="1">
+        <li>
+         中文(台灣)
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://www.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("en_US", "zh_TW", "https:\/\/www.facebook.com\/login\/", "www_list_selector", 0); return false;' title="English (US)">
+          English (US)
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://vi-vn.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("vi_VN", "zh_TW", "https:\/\/vi-vn.facebook.com\/login\/", "www_list_selector", 1); return false;' title="Vietnamese">
+          Tiếng Việt
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://id-id.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("id_ID", "zh_TW", "https:\/\/id-id.facebook.com\/login\/", "www_list_selector", 2); return false;' title="Indonesian">
+          Bahasa Indonesia
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://th-th.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("th_TH", "zh_TW", "https:\/\/th-th.facebook.com\/login\/", "www_list_selector", 3); return false;' title="Thai">
+          ภาษาไทย
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://ja-jp.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("ja_JP", "zh_TW", "https:\/\/ja-jp.facebook.com\/login\/", "www_list_selector", 4); return false;' title="Japanese">
+          日本語
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://es-la.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("es_LA", "zh_TW", "https:\/\/es-la.facebook.com\/login\/", "www_list_selector", 5); return false;' title="Spanish">
+          Español
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://pt-br.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("pt_BR", "zh_TW", "https:\/\/pt-br.facebook.com\/login\/", "www_list_selector", 6); return false;' title="Portuguese (Brazil)">
+          Português (Brasil)
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://fr-fr.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("fr_FR", "zh_TW", "https:\/\/fr-fr.facebook.com\/login\/", "www_list_selector", 7); return false;' title="French (France)">
+          Français (France)
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://de-de.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("de_DE", "zh_TW", "https:\/\/de-de.facebook.com\/login\/", "www_list_selector", 8); return false;' title="German">
+          Deutsch
+         </a>
+        </li>
+        <li>
+         <a class="_sv4" dir="ltr" href="https://it-it.facebook.com/login/" onclick='require("IntlUtils").setCookieLocale("it_IT", "zh_TW", "https:\/\/it-it.facebook.com\/login\/", "www_list_selector", 9); return false;' title="Italian">
+          Italiano
+         </a>
+        </li>
+        <li>
+         <a ajaxify="/settings/language/language/?uri=https%3A%2F%2Fit-it.facebook.com%2Flogin%2F&amp;source=www_list_selector_more" class="_42ft _4jy0 _517i _517h _51sy" href="#" rel="dialog" role="button" title="顯示更多語言">
+          <i class="img sp_8oGPGkzB8ig sx_fc06b0">
+          </i>
+         </a>
+        </li>
+       </ul>
+       <div id="contentCurve">
+       </div>
+       <div aria-label="Facebook 網站連結" id="pageFooterChildren" role="contentinfo">
+        <ul class="uiList pageFooterLinkList _509- _4ki _703 _6-i">
+         <li>
+          <a href="/reg/" title="註冊 Facebook 帳號">
+           註冊
+          </a>
+         </li>
+         <li>
+          <a href="/login/" title="登入 Facebook">
+           登入
+          </a>
+         </li>
+         <li>
+          <a href="https://messenger.com/" title="查看 Messenger。">
+           Messenger
+          </a>
+         </li>
+         <li>
+          <a href="/lite/" title="Android 版 Facebook Lite。">
+           Facebook Lite
+          </a>
+         </li>
+         <li>
+          <a href="https://www.facebook.com/watch/" title="在「影片」頁籤瀏覽">
+           影片
+          </a>
+         </li>
+         <li>
+          <a href="/places/" title="查看 Facebook 的熱門地標。">
+           地標
+          </a>
+         </li>
+         <li>
+          <a href="/games/" title="來玩 Facebook 遊戲。">
+           遊戲
+          </a>
+         </li>
+         <li>
+          <a href="/marketplace/" title="在 Facebook Marketplace 買賣商品。">
+           Marketplace
+          </a>
+         </li>
+         <li>
+          <a href="https://pay.facebook.com/" target="_blank" title="深入瞭解 Meta Pay">
+           Meta Pay
+          </a>
+         </li>
+         <li>
+          <a href="https://www.meta.com/" target="_blank" title="查看 Meta">
+           Meta Store
+          </a>
+         </li>
+         <li>
+          <a href="https://www.meta.com/quest/" target="_blank" title="深入瞭解 Meta Quest">
+           Meta Quest
+          </a>
+         </li>
+         <li>
+          <a href="https://www.meta.ai/" title="Meta AI">
+           Meta AI
+          </a>
+         </li>
+         <li>
+          <a data-lynx-mode="hover" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AT0C6JCnNLzT9zxIsnTbQ1fQovdOpmJ-sysYQrg4LNz9funqLp975QMLcjLg1gkF7ubCeU1yIzQnFS9MwuojIUN1E7wVnz62hEv1ZI7MR0ojqqdfdgthUT5GuQMHpGTqOtAJqf-nSk5hOvjo" rel="nofollow" target="_blank" title="查看 Instagram">
+           Instagram
+          </a>
+         </li>
+         <li>
+          <a href="https://www.threads.net/" title="查看 Threads">
+           Threads
+          </a>
+         </li>
+         <li>
+          <a href="/fundraisers/" title="捐款支持值得關注的公益理念。">
+           募款活動
+          </a>
+         </li>
+         <li>
+          <a href="/biz/directory/" title="瀏覽我們的 Facebook 服務目錄。">
+           服務
+          </a>
+         </li>
+         <li>
+          <a href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D" title="查看投票資訊中心。">
+           投票資訊中心
+          </a>
+         </li>
+         <li>
+          <a href="/privacy/policy/?entry_point=facebook_page_footer" title="瞭解我們如何蒐集、使用和分享資料來支持 Facebook。">
+           《隱私政策》
+          </a>
+         </li>
+         <li>
+          <a href="/privacy/center/?entry_point=facebook_page_footer" title="瞭解如何管理和控制 Facebook 隱私設定。">
+           隱私中心
+          </a>
+         </li>
+         <li>
+          <a href="/groups/discover/" title="探索我們的社團。">
+           社團
+          </a>
+         </li>
+         <li>
+          <a accesskey="8" href="https://about.meta.com/" title="追蹤我們的部落格、參考我們的資源中心以及工作機會。">
+           關於
+          </a>
+         </li>
+         <li>
+          <a href="/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto" title="在 Facebook 刊登廣告。">
+           刊登廣告
+          </a>
+         </li>
+         <li>
+          <a href="/pages/create/?ref_type=site_footer" title="建立粉絲專頁">
+           建立粉絲專頁
+          </a>
+         </li>
+         <li>
+          <a href="https://developers.facebook.com/?ref=pf" title="使用我們的開發平台">
+           開發人員
+          </a>
+         </li>
+         <li>
+          <a href="/careers/?ref=pf" title="加入成為我們企業的一份子。">
+           工作機會
+          </a>
+         </li>
+         <li>
+          <a data-nocookies="1" href="/policies/cookies/" title="瞭解 Cookie 和 Facebook">
+           Cookie
+          </a>
+         </li>
+         <li>
+          <a class="_41ug" data-nocookies="1" href="https://www.facebook.com/help/568137493302217" title="瞭解 Ad Choices。">
+           Ad Choices
+           <i class="img sp_8oGPGkzB8ig sx_218f74">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a accesskey="9" data-nocookies="1" href="/policies?ref=pf" title="查閱我們的條款與政策。">
+           使用條款
+          </a>
+         </li>
+         <li>
+          <a accesskey="0" href="/help/?ref=pf" title="前往我們的使用說明。">
+           使用說明
+          </a>
+         </li>
+         <li>
+          <a href="help/637205020878504" title="瀏覽「聯絡人上傳和非用戶」通知。">
+           聯絡人上傳和非用戶
+          </a>
+         </li>
+         <li>
+          <a accesskey="6" class="accessible_elem" href="/settings" title="查看並編輯你的 Facebook 設定。">
+           設定
+          </a>
+         </li>
+         <li>
+          <a accesskey="7" class="accessible_elem" href="/allactivity?privacy_source=activity_log_top_menu" title="查看活動紀錄">
+           活動紀錄
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div class="mvl copyright">
+        <div>
+         <span>
+          Meta © 2024
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+   </div>
+   <span>
+    <img height="0" src="https://facebook.com/security/hsts-pixel.gif?c=3.2.5" style="display:none" width="0"/>
+   </span>
+  </div>
+  <div style="display:none">
+  </div>
+  <script>
+   requireLazy(["HasteSupportData"],function(m){m.handle({"bxData":{"875231":{"uri":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/yT\/r\/aGT3gskzWBf.ico"}},"clpData":{"1743095":{"r":1,"s":1},"1744178":{"r":1,"s":1}},"gkxData":{"21116":{"result":false,"hash":null},"21049":{"result":false,"hash":null},"1624":{"result":false,"hash":null},"2160":{"result":false,"hash":null},"21050":{"result":false,"hash":null},"21051":{"result":false,"hash":null},"21052":{"result":false,"hash":null},"21053":{"result":false,"hash":null},"21054":{"result":false,"hash":null},"21055":{"result":false,"hash":null},"21056":{"result":false,"hash":null},"21057":{"result":false,"hash":null},"21058":{"result":false,"hash":null}},"qplData":{"891":{"r":1}}})});requireLazy(["Bootloader"],function(m){m.handlePayload({"consistency":{"rev":1013617112},"rsrcMap":{"OtKFPba":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yV\/r\/EZkcOGfekyW.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"rAmuZxG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yG\/r\/ZFjqR4LWmUi.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"9r+s+tq":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/r\/qBOOjqn3JEw.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TW5OlIU":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yx\/r\/vETKRVY2uXt.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/UzGNHL":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yM\/r\/NI6i4mbNvFF.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"6n90fU2":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i63m4\/ya\/l\/zh_TW\/kUjETTwgpPt.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"EOuGB4S":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ys\/r\/7k5KO8lR42r.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"88kADl\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yh\/r\/Ag8-7nahjte.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"l9jZk4d":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yu\/r\/BCQzaBLfyGr.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"DY64uj0":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i_OG4\/yz\/l\/zh_TW\/WEdKcES3WSL.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"1gXp+VM":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yi\/r\/D1o41kmPVAv.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Zrh8Jc4":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yC\/r\/uj3eXf0GNCG.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"HAR+Vjs":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yW\/r\/rJ94RMpIhR7.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4L8Docn":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yU\/r\/s2znI2BtEby.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"R5w1rCJ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yF\/r\/p55HfXW__mM.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"nWW62Q9":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y3\/r\/jKO3OeSyz-q.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"0fNV0uh":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yx\/r\/x2riMh8tM9-.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"8vrbN\/g":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iAHa4\/yu\/l\/zh_TW\/SKy1aLptd6E.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"\/AN8Bt5":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y2\/r\/3FPJ9YC_wUr.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"CBFvSpM":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iFvO4\/yK\/l\/zh_TW\/oJfB2r3Emz_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Xo\/8b8\/":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yE\/l\/1,cross\/Tkil4Zc9m2T.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"rxHxG1z":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yK\/r\/GN7YyMA5ddn.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"a1ZrgRu":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yH\/r\/HvmCuQtPt0x.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Ufq6YWX":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yX\/r\/eGY_1gEOdFg.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"9TDt7OD":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3izrH4\/y5\/l\/zh_TW\/kiY3mEp5hmm.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"1AJsX6b":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iFlH4\/yJ\/l\/zh_TW\/0kX406pws28.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"DDxUZX0":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i1iQ4\/y-\/l\/zh_TW\/69k27HJiJkh.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"0eXldTh":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yQ\/r\/hxvJNtmsdZp.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"WXzFmqo":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yd\/r\/KHYiOfzr48a.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"CYxTBvr":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3idZ74\/yx\/l\/zh_TW\/5FheDnNV-w3.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"LV9uvFd":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yp\/r\/xE-iTRpr8qh.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"r8I\/\/eO":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yu\/r\/wcB-x9lYxqz.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"kVeoUr4":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i8594\/yA\/l\/zh_TW\/_IuVV35nPd_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"vZAPg0U":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iERq4\/ya\/l\/zh_TW\/dSwwLuAWuXp.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"5vqwC5u":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yp\/r\/RZus5b7zfCI.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ypypwMs":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yR\/l\/1,cross\/Qz_8rcKrGoT.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"05ZQF5A":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yY\/l\/1,cross\/n9V-m-rosCH.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"j5UQz6\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i1Yc4\/yG\/l\/zh_TW\/qi3RpfTTM_4.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"IrdjbIU":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y1\/r\/w1vdhPxs2pA.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"UgpMdBZ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yN\/r\/QomkZkRsNeQ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"yz4+Dza":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yZ\/r\/YUCXbd4jyzM.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TW\/fuwr":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iZaF4\/yU\/l\/zh_TW\/LAUkmSg2wqt.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"sImM7dF":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yS\/l\/1,cross\/ICCJfmE9MUW.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"uyjwrox":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yw\/r\/WhJS6P-XX-7.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Usim0KB":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iw534\/ye\/l\/zh_TW\/gHq1HNez9Fm.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"19hn+7X":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yO\/r\/t1rKC1fVSR_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"gogGL75":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iHgZ4\/yM\/l\/zh_TW\/7lg9rVxRvxG.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"P+3uSM8":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ys\/r\/NA15mp_kOXQ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"l\/eCT\/v":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ikLt4\/yu\/l\/zh_TW\/stFr2pSCX8N.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"pqUk5mC":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/r\/iiyXlJDHfG-.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"9o8lRAd":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yC\/r\/48eaCaBPUvy.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"+FUkT7l":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3inu-4\/yB\/l\/zh_TW\/V10SIjS8aK_.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Aj9b3z6":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yB\/l\/1,cross\/g-GsnIoP-VY.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"6mTTfSQ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ipkF4\/yc\/l\/zh_TW\/7vOw-0rHQEz.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"odDfP2h":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yx\/r\/NGDlr1mtv66.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"wmGPEQZ":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yP\/l\/1,cross\/tm3EOOJcD37.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"wpsH0Yi":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yg\/l\/1,cross\/8gvIjLv0Gb8.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"Ki\/RQio":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yF\/r\/D50fTYvOojQ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ZfOstMb":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yq\/r\/YJAzEf2h_Kv.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4FPDBxM":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yb\/r\/IbEU6o3x0eh.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"FgjmbCr":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yi\/r\/v4sdW8poZ4o.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"muSSU6l":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iMrx4\/yu\/l\/zh_TW\/37W7rzeBSPU.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"++mQvtN":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yx\/l\/1,cross\/p3tz0hvwWuX.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"sfsMqE6":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yM\/r\/AwGIGcMmplv.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"xybkWFj":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yG\/r\/MYgy4kvzBpC.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"MZhG7wE":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iaXQ4\/yH\/l\/zh_TW\/HK9N5LyfNjf.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"OBZHixA":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iuuT4\/y4\/l\/zh_TW\/8yhX6zISyBb.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"xlYYgFi":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i4rT4\/yZ\/l\/zh_TW\/lQf8QlBdXuR.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"V6Cxh+h":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yd\/r\/KyCDJh5Z2FZ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"LwbCrAa":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y2\/r\/43lV39McHah.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"wbIwz\/Z":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yu\/l\/1,cross\/AQeBHDksRjE.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"Ewl2TIq":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3il1X4\/yt\/l\/zh_TW\/2mADpLBmE-Y.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"qHLzDkn":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3ilsb4\/y5\/l\/zh_TW\/z0tvFfWpWsO.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"u0jNv\/V":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iYHC4\/yA\/l\/zh_TW\/mPuNMYlBF9r.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"0UfHsBp":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ym\/l\/1,cross\/JIwjqYXnfse.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"A\/bxDq\/":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iwcb4\/yB\/l\/zh_TW\/2ZJsD_SStBL.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"0RwGdnA":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yc\/l\/1,cross\/IJnBG3Wkt12.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"3UAu743":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y4\/r\/2_CO9An-iji.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"X2+KwPx":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yy\/r\/1CaIL7tboJy.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"4CiIcGh":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iyYK4\/yj\/l\/zh_TW\/1x1plr7SmPm.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"TO2OqGN":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/l\/1,cross\/MVrxG2bY8Wl.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"sx7wD2h":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iZGl4\/ya\/l\/zh_TW\/vZuR8qGioyn.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"yYJjMnP":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iApl4\/y2\/l\/zh_TW\/popFLXUXj4R.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Tfvo2Lb":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yZ\/l\/1,cross\/VyovhKZZWS3.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"hJRxmb7":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yX\/l\/1,cross\/xsxaIyRJ4xs.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"db0RxEm":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yR\/r\/RZRs7NFJVGA.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"mpoqBMp":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yp\/r\/IhmNSiRMpw6.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"ECvOhZc":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yw\/r\/HfI9Sub-8au.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"tD5B9x6":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iHYs4\/yu\/l\/zh_TW\/5GqOlnfbnRD.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"qJ0brcQ":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yz\/r\/g_15KhmYuXD.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"d8l3yF5":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yF\/l\/1,cross\/PbIQEuYo_-h.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"+LRNnth":{"type":"css","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y_\/l\/1,cross\/VSuBBbknJDm.css?_nc_x=Ij3Wp8lg5Kz","nc":1},"KTJXyzv":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yG\/r\/Mdl4See5q5E.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"xsFg75a":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yt\/r\/mnLc1TS2Wp-.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"rCasuzG":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yA\/r\/OzWmCcYw0wO.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Ba2ZF6b":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3igDb4\/yO\/l\/zh_TW\/JphgCZnO6fX.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"b3Sf5kg":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iNEU4\/y8\/l\/zh_TW\/rmf8FBm33TW.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"SWx3yNv":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y7\/r\/g__eV5OXSXl.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"lIIrTFb":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3izTZ4\/yV\/l\/zh_TW\/-xkP8VofJ1y.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"x22Oby4":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yZ\/r\/tVshp1OIV9l.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"8ELCBwH":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/ye\/r\/VRzSVH5iU-V.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"mg5tXMv":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3i-7L4\/yK\/l\/zh_TW\/jj4KKD3Z-L9.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"I+GHswV":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yS\/r\/ui2DkP-wt_7.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"vdNQr9P":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yj\/r\/FiVT6nDibIJ.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"17Grp2h":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/y-\/r\/HhbMrxvaW_H.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"H\/5lfuF":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yF\/r\/iqrvM8jAXX7.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"QIamfde":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yA\/r\/Y37sQzk-yb8.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"QyoftxH":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yL\/r\/j-_AFWnS2kv.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"zPYlTyl":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yO\/r\/_tJ17sGyxOX.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"Tll2J5j":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3\/yQ\/r\/WeajZf_EolU.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"JHVrTqo":{"type":"js","src":"https:\/\/static.xx.fbcdn.net\/rsrc.php\/v3iU514\/y2\/l\/zh_TW\/kGj78B3R_le.js?_nc_x=Ij3Wp8lg5Kz","nc":1},"P\/mr5VE":{"type":"css","src":"data:text\/css; charset=utf-8;base64,I2Jvb3Rsb2FkZXJfUF9tcjVWRXtoZWlnaHQ6NDJweDt9LmJvb3Rsb2FkZXJfUF9tcjVWRXtkaXNwbGF5OmJsb2NrIWltcG9ydGFudDt9","nc":1,"d":1}},"compMap":{"WebSpeedInteractionsTypedLogger":{"r":["OtKFPba","rAmuZxG","9r+s+tq","TW5OlIU"],"be":1},"AsyncRequest":{"r":["\/UzGNHL","rAmuZxG","6n90fU2","41iDNZ\/"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"DOM":{"r":["rAmuZxG","41iDNZ\/"],"be":1},"Form":{"r":["rAmuZxG","EOuGB4S","41iDNZ\/"],"be":1},"FormSubmit":{"r":["\/UzGNHL","rAmuZxG","EOuGB4S","6n90fU2","88kADl\/","41iDNZ\/"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"Input":{"r":["EOuGB4S"],"be":1},"Toggler":{"r":["TW5OlIU","Gd2PMWA","l9jZk4d","DY64uj0","1gXp+VM","Zrh8Jc4","rAmuZxG","HAR+Vjs","4L8Docn","41iDNZ\/"],"be":1},"Tooltip":{"r":["R5w1rCJ","TW5OlIU","\/UzGNHL","Gd2PMWA","1gXp+VM","nWW62Q9","0fNV0uh","8vrbN\/g","\/AN8Bt5","rAmuZxG","CBFvSpM","Xo\/8b8\/","6n90fU2","HAR+Vjs","4L8Docn","rxHxG1z","41iDNZ\/","a1ZrgRu","DY64uj0","Ufq6YWX","EOuGB4S"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","PageTransitions","Animation"]},"be":1},"URI":{"r":[],"be":1},"trackReferrer":{"r":[],"be":1},"PhotoTagApproval":{"r":["9TDt7OD","1AJsX6b","rAmuZxG","41iDNZ\/"],"be":1},"PhotoSnowlift":{"r":["R5w1rCJ","DDxUZX0","TW5OlIU","0eXldTh","WXzFmqo","CYxTBvr","LV9uvFd","r8I\/\/eO","ASKMoWR","kVeoUr4","vZAPg0U","5vqwC5u","ypypwMs","\/UzGNHL","05ZQF5A","j5UQz6\/","IrdjbIU","UgpMdBZ","yz4+Dza","TW\/fuwr","Gd2PMWA","l9jZk4d","sImM7dF","uyjwrox","Usim0KB","19hn+7X","9TDt7OD","gogGL75","P+3uSM8","DY64uj0","l\/eCT\/v","pqUk5mC","1gXp+VM","9o8lRAd","nWW62Q9","+FUkT7l","Aj9b3z6","0fNV0uh","a1ZrgRu","8vrbN\/g","6mTTfSQ","\/AN8Bt5","odDfP2h","wmGPEQZ","wpsH0Yi","Ki\/RQio","ZfOstMb","4FPDBxM","FgjmbCr","muSSU6l","Zrh8Jc4","++mQvtN","sfsMqE6","rAmuZxG","xybkWFj","MZhG7wE","EOuGB4S","CBFvSpM","Xo\/8b8\/","6n90fU2","OBZHixA","HAR+Vjs","4L8Docn","xlYYgFi","V6Cxh+h","LwbCrAa","wbIwz\/Z","rxHxG1z","Ewl2TIq","qHLzDkn","u0jNv\/V","0UfHsBp","41iDNZ\/","A\/bxDq\/","0RwGdnA","3UAu743","X2+KwPx","9r+s+tq","Ufq6YWX"],"rds":{"m":["Animation","FbtLogging","IntlQtEventFalcoEvent","PageTransitions"]},"be":1},"PhotoTagger":{"r":["R5w1rCJ","DDxUZX0","TW5OlIU","4CiIcGh","0eXldTh","\/UzGNHL","IrdjbIU","Gd2PMWA","uyjwrox","9TDt7OD","TO2OqGN","P+3uSM8","DY64uj0","sx7wD2h","1gXp+VM","nWW62Q9","0fNV0uh","8vrbN\/g","\/AN8Bt5","yYJjMnP","wmGPEQZ","Tfvo2Lb","hJRxmb7","db0RxEm","rAmuZxG","mpoqBMp","CBFvSpM","6n90fU2","HAR+Vjs","4L8Docn","rxHxG1z","41iDNZ\/","0RwGdnA","a1ZrgRu","9r+s+tq","Ufq6YWX","EOuGB4S","19hn+7X"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","PageTransitions","Animation"]},"be":1},"PhotoTags":{"r":["9TDt7OD","1AJsX6b","rAmuZxG","4L8Docn","41iDNZ\/"],"be":1},"TagTokenizer":{"r":["TW5OlIU","05ZQF5A","ECvOhZc","1AJsX6b","tD5B9x6","rAmuZxG","mpoqBMp","qJ0brcQ","EOuGB4S","d8l3yF5","+LRNnth","HAR+Vjs","4L8Docn","41iDNZ\/"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"],"r":["\/UzGNHL","6n90fU2"]},"be":1},"AsyncDialog":{"r":["R5w1rCJ","TW5OlIU","r8I\/\/eO","\/UzGNHL","Gd2PMWA","l9jZk4d","uyjwrox","P+3uSM8","DY64uj0","1gXp+VM","nWW62Q9","+FUkT7l","0fNV0uh","8vrbN\/g","wmGPEQZ","Ki\/RQio","Zrh8Jc4","++mQvtN","rAmuZxG","6n90fU2","HAR+Vjs","4L8Docn","41iDNZ\/","a1ZrgRu","19hn+7X"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"Hovercard":{"r":["R5w1rCJ","DDxUZX0","TW5OlIU","4CiIcGh","\/UzGNHL","Gd2PMWA","uyjwrox","DY64uj0","1gXp+VM","nWW62Q9","0fNV0uh","8vrbN\/g","\/AN8Bt5","yYJjMnP","wmGPEQZ","Tfvo2Lb","hJRxmb7","db0RxEm","rAmuZxG","CBFvSpM","6n90fU2","HAR+Vjs","4L8Docn","rxHxG1z","41iDNZ\/","0RwGdnA","a1ZrgRu","9r+s+tq","Ufq6YWX","EOuGB4S"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","PageTransitions","Animation"]},"be":1},"XSalesPromoWWWDetailsDialogAsyncController":{"r":["KTJXyzv","6n90fU2"],"be":1},"XOfferController":{"r":["xsFg75a","6n90fU2"],"be":1},"PerfXSharedFields":{"r":["TW5OlIU","0fNV0uh"],"be":1},"KeyEventTypedLogger":{"r":["rCasuzG","rAmuZxG","9r+s+tq","TW5OlIU"],"be":1},"Dialog":{"r":["TW5OlIU","\/UzGNHL","Gd2PMWA","uyjwrox","1gXp+VM","nWW62Q9","0fNV0uh","8vrbN\/g","rAmuZxG","EOuGB4S","6n90fU2","HAR+Vjs","4L8Docn","Ewl2TIq","0UfHsBp","41iDNZ\/","R5w1rCJ","DY64uj0","Ufq6YWX"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent","Animation","PageTransitions"]},"be":1},"ExceptionDialog":{"r":["R5w1rCJ","TW5OlIU","r8I\/\/eO","ASKMoWR","Gd2PMWA","l9jZk4d","uyjwrox","DY64uj0","l\/eCT\/v","1gXp+VM","Ba2ZF6b","nWW62Q9","b3Sf5kg","+FUkT7l","0fNV0uh","8vrbN\/g","wmGPEQZ","Ki\/RQio","Zrh8Jc4","++mQvtN","rAmuZxG","HAR+Vjs","4L8Docn","xlYYgFi","41iDNZ\/","a1ZrgRu","6n90fU2","\/UzGNHL"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"QuickSandSolver":{"r":["SWx3yNv","\/UzGNHL","lIIrTFb","rAmuZxG","EOuGB4S","6n90fU2","x22Oby4","8ELCBwH","mg5tXMv","41iDNZ\/"],"rds":{"m":["FbtLogging","IntlQtEventFalcoEvent"]},"be":1},"ConfirmationDialog":{"r":["I+GHswV","vdNQr9P","rAmuZxG","EOuGB4S","4L8Docn","41iDNZ\/"],"be":1},"MWADeveloperReauthBarrier":{"r":["17Grp2h","H\/5lfuF","QIamfde","QyoftxH","rAmuZxG"],"be":1}}})});
+  </script>
+  <script>
+   requireLazy(["InitialJSLoader"], function(InitialJSLoader) {InitialJSLoader.loadOnDOMContentReady(["uyjwrox","6n90fU2","rAmuZxG","\/AN8Bt5","Zrh8Jc4","4L8Docn","TW5OlIU","\/UzGNHL","EOuGB4S","I+GHswV","zPYlTyl","Tll2J5j","JHVrTqo","0fNV0uh","HAR+Vjs","9r+s+tq","P\/mr5VE"]);});
+  </script>
+  <script>
+   requireLazy(["TimeSliceImpl","ServerJS"],function(TimeSlice,ServerJS){var s=(new ServerJS());s.handle({"define":[["cr:7736",["FBLynxLogging"],{"__rc":["FBLynxLogging",null]},-1],["LinkshimHandlerConfig",[],{"supports_meta_referrer":false,"default_meta_referrer_policy":"default","switched_meta_referrer_policy":"origin","non_linkshim_lnfb_mode":"ie","link_react_default_hash":"AT1lYP9oKHbJyiuy1ToyYsBgxbiEotYivFffF05eO4LN9yifSRSo9tU9UZdd88F0z-nvGZ3RdTko9DTFAifc7jFTcZGxIdECRRT2u_h2JHMDlS-GvxPfUMGQYl5pWCaXq5llYisVEYeR6MDS","untrusted_link_default_hash":"AT3l29NLqvtWvpBBhEHUeTXd3R1WI0MoLnF_oJM551RO3oOIx0ogcLzHn5GCK_zY8gyUR6IIhwOH1qlWYuPOnCUuH0LLXCWxG04aukPlwa1gfuKiubHnLl6CPh6QUiwECm_Ssu1jiq-R0Uc8","linkshim_host":"l.facebook.com","linkshim_path":"\/l.php","linkshim_enc_param":"h","linkshim_url_param":"u","use_rel_no_opener":false,"use_rel_no_referrer":false,"always_use_https":false,"onion_always_shim":true,"middle_click_requires_event":false,"www_safe_js_mode":"hover","m_safe_js_mode":null,"ghl_param_link_shim":false,"click_ids":[],"is_linkshim_supported":true,"current_domain":"facebook.com","blocklisted_domains":["ad.doubleclick.net","ads-encryption-url-example.com","bs.serving-sys.com","ad.atdmt.com","adform.net","ad13.adfarm1.adition.com","ilovemyfreedoms.com","secure.adnxs.com"],"is_mobile_device":false},27]],"elements":[["__elem_a588f507_0_1_YT","u_0_0_p7",1],["__elem_a588f507_0_0_18","globalContainer",1],["__elem_a588f507_0_2_9G","content",1],["__elem_835c633a_0_0_\/j","login_form",2],["__elem_f46f4946_0_0_TZ","u_0_1_kA",1],["__elem_f46f4946_0_1_8+","u_0_2_rw",1],["__elem_70b16c69_0_0_Le","pass",1],["__elem_a588f507_0_3_Ek","u_0_3_ZA",1],["__elem_a588f507_0_4_hJ","u_0_4_lU",1],["__elem_45d73b5d_0_0_hT","loginbutton",1]],"require":[["ServiceWorkerLoginAndLogout","login",[],[]],["WebPixelRatioDetector","startDetecting",[],[false]],["ScriptPath","set",[],["XWebLoginController","96e88af3",{"imp_id":"1EPT70tuJhGMzpNtC","ef_page":null,"uri":"https:\/\/www.facebook.com\/login\/"}]],["UITinyViewportAction","init",[],[]],["ResetScrollOnUnload","init",["__elem_a588f507_0_0_18"],[{"__m":"__elem_a588f507_0_0_18"}]],["KeyboardActivityLogger","init",[],[]],["FocusRing","init",[],[]],["ErrorMessageConsole","listenForUncaughtErrors",[],[]],["HardwareCSS","init",[],[]],["IntlUtils"],["FBLynx","setupDelegation",[],[]],["TimezoneAutoset","setInputValue",["__elem_f46f4946_0_0_TZ"],[{"__m":"__elem_f46f4946_0_0_TZ"},1716109573]],["ScreenDimensionsAutoSet","setInputValue",["__elem_f46f4946_0_1_8+"],[{"__m":"__elem_f46f4946_0_1_8+"}]],["LoginFormController","init",["__elem_835c633a_0_0_\/j","__elem_45d73b5d_0_0_hT"],[{"__m":"__elem_835c633a_0_0_\/j"},{"__m":"__elem_45d73b5d_0_0_hT"},null,true,{"pubKey":{"publicKey":"5c8847bf99d5b1ed775b125747a34be2a268d639991d0b0c14cb773ed43ad417","keyId":247}},false]],["PlatformDialogCBTSetter","setCBTInFormAndLog",["__elem_835c633a_0_0_\/j"],[{"__m":"__elem_835c633a_0_0_\/j"},"client_logged_out_init_impression"]],["BrowserPrefillLogging","initContactpointFieldLogging",[],[{"contactpointFieldID":"email","serverPrefill":""}]],["BrowserPrefillLogging","initPasswordFieldLogging",[],[{"passwordFieldID":"pass"}]],["LoginFormToggle","initToggle",["__elem_a588f507_0_3_Ek","__elem_a588f507_0_4_hJ","__elem_70b16c69_0_0_Le"],[{"__m":"__elem_a588f507_0_3_Ek"},{"__m":"__elem_a588f507_0_4_hJ"},{"__m":"__elem_70b16c69_0_0_Le"}]],["FocusListener"],["FlipDirectionOnKeypress"],["RequireDeferredReference","unblock",[],[["FbtLogging","IntlQtEventFalcoEvent"],"sd"]],["RequireDeferredReference","unblock",[],[["FbtLogging","IntlQtEventFalcoEvent"],"css"]],["TimeSliceImpl"],["HasteSupportData"],["ServerJS"],["Run"],["InitialJSLoader"]],"contexts":[[{"__m":"__elem_a588f507_0_1_YT"},true],[{"__m":"__elem_a588f507_0_2_9G"},true]]});requireLazy(["Run"],function(Run){Run.onAfterLoad(function(){s.cleanup(TimeSlice)})});});
+  </script>
+  <script>
+   now_inl=(function(){var p=window.performance;return p&&p.now&&p.timing&&p.timing.navigationStart?function(){return p.now()+p.timing.navigationStart}:function(){return new Date().getTime()};})();window.__bigPipeFR=now_inl();
+  </script>
+  <link as="style" href="https://static.xx.fbcdn.net/rsrc.php/v3/y4/l/1,cross/xGVbpgxTK0y.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" href="https://static.xx.fbcdn.net/rsrc.php/v3/yy/l/1,cross/P52EQvM7dkh.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="style" href="https://static.xx.fbcdn.net/rsrc.php/v3/yr/l/1,cross/ZKalGSI_tfl.css?_nc_x=Ij3Wp8lg5Kz" rel="preload"/>
+  <link as="script" href="https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/ZFjqR4LWmUi.js?_nc_x=Ij3Wp8lg5Kz" nonce="0PwzEeCT" rel="preload"/>
+  <link as="script" href="https://static.xx.fbcdn.net/rsrc.php/v3i63m4/ya/l/zh_TW/kUjETTwgpPt.js?_nc_x=Ij3Wp8lg5Kz" nonce="0PwzEeCT" rel="preload"/>
+  <link as="script" href="https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/NI6i4mbNvFF.js?_nc_x=Ij3Wp8lg5Kz" nonce="0PwzEeCT" rel="preload"/>
+  <script>
+   window.__bigPipeCtor=now_inl();requireLazy(["BigPipe"],function(BigPipe){define("__bigPipe",[],window.bigPipe=new BigPipe({"forceFinish":true,"config":{"flush_pagelets_asap":true,"dispatch_pagelet_replayable_actions":false}}));});
+  </script>
+  <script nonce="0PwzEeCT">
+   (function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("first_response",n);})})();
+  </script>
+  <script nonce="0PwzEeCT">
+   requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["Gd2PMWA","41iDNZ/","ASKMoWR","rAmuZxG","6n90fU2","P/mr5VE","/UzGNHL"],id:"first_response",phase:0,last_in_phase:true,tti_phase:0,all_phases:[63],hsrp:{hblp:{consistency:{rev:1013617112}}},allResources:["Gd2PMWA","41iDNZ/","ASKMoWR","uyjwrox","6n90fU2","rAmuZxG","/AN8Bt5","Zrh8Jc4","4L8Docn","TW5OlIU","/UzGNHL","EOuGB4S","I+GHswV","zPYlTyl","Tll2J5j","JHVrTqo","0fNV0uh","HAR+Vjs","P/mr5VE","9r+s+tq"]});}));
+  </script>
+  <script>
+   requireLazy(["__bigPipe"],function(bigPipe){bigPipe.setPageID("7370634494378061155")});
+  </script>
+  <script nonce="0PwzEeCT">
+   (function(){var n=now_inl();requireLazy(["__bigPipe"],function(bigPipe){bigPipe.beforePageletArrive("last_response",n);})})();
+  </script>
+  <script nonce="0PwzEeCT">
+   requireLazy(["__bigPipe"],(function(bigPipe){bigPipe.onPageletArrive({displayResources:["9r+s+tq"],id:"last_response",phase:63,last_in_phase:true,the_end:true,jsmods:{define:[["cr:6016",["NavigationMetricsWWW"],{__rc:["NavigationMetricsWWW",null]},-1],["cr:7383",["BanzaiWWW"],{__rc:["BanzaiWWW",null]},-1],["cr:5662",["Event"],{__rc:["Event",null]},-1],["cr:1458113",[],{__rc:[null,null]},-1],["cr:3376",[],{__rc:[null,null]},-1],["cr:1083116",["XAsyncRequest"],{__rc:["XAsyncRequest",null]},-1],["cr:1083117",[],{__rc:[null,null]},-1],["cr:686",[],{__rc:[null,null]},-1],["cr:1984081",[],{__rc:[null,null]},-1],["TimeSliceInteractionSV",[],{on_demand_reference_counting:true,on_demand_profiling_counters:true,default_rate:1000,lite_default_rate:100,interaction_to_lite_coinflip:{ADS_INTERFACES_INTERACTION:0,ads_perf_scenario:0,ads_wait_time:0,Event:1},interaction_to_coinflip:{ADS_INTERFACES_INTERACTION:1,ads_perf_scenario:1,ads_wait_time:1,Event:100},enable_heartbeat:false,maxBlockMergeDuration:0,maxBlockMergeDistance:0,enable_banzai_stream:true,user_timing_coinflip:50,banzai_stream_coinflip:0,compression_enabled:true,ref_counting_fix:false,ref_counting_cont_fix:false,also_record_new_timeslice_format:false,force_async_request_tracing_on:false},2609],["BDSignalCollectionData",[],{sc:"{\"t\":1659080345,\"c\":[[30000,838801],[30001,838801],[30002,838801],[30003,838801],[30004,838801],[30005,838801],[30006,573585],[30007,838801],[30008,838801],[30012,838801],[30013,838801],[30015,806033],[30018,806033],[30021,540823],[30022,540817],[30040,806033],[30093,806033],[30094,806033],[30095,806033],[30101,541591],[30102,541591],[30103,541591],[30104,541591],[30106,806039],[30107,806039],[38000,541427],[38001,806643]]}",fds:60,fda:60,i:60,sbs:1,dbs:100,bbs:100,hbi:60,rt:262144,hbcbc:2,hbvbc:0,hbbi:30,sid:-1,hbv:"862167787228237364"},5239],["IntlCurrentLocale",[],{code:"zh_TW"},5954],["USIDMetadata",[],{browser_id:"?",tab_id:"",page_id:"Psdq6mdtsghp2",transition_id:0,version:6},5888],["cr:1642797",["BanzaiBase"],{__rc:["BanzaiBase",null]},-1],["cr:1042",["XAsyncRequestWWW"],{__rc:["XAsyncRequestWWW",null]},-1],["cr:5866",["BanzaiAdapterWWW"],{__rc:["BanzaiAdapterWWW",null]},-1],["cr:7384",["cancelIdleCallbackWWW"],{__rc:["cancelIdleCallbackWWW",null]},-1],["cr:692209",["cancelIdleCallbackBlue"],{__rc:["cancelIdleCallbackBlue",null]},-1],["BanzaiConfig",[],{MAX_SIZE:10000,MAX_WAIT:150000,MIN_WAIT:null,RESTORE_WAIT:150000,blacklist:["time_spent"],disabled:false,gks:{boosted_pagelikes:true,mercury_send_error_logging:true,platform_oauth_client_events:true,sticker_search_ranking:true},known_routes:["artillery_javascript_actions","artillery_javascript_trace","artillery_logger_data","logger","falco","gk2_exposure","js_error_logging","loom_trace","marauder","perfx_custom_logger_endpoint","qex","require_cond_exposure_logging","metaconfig_exposure"],should_drop_unknown_routes:true,should_log_unknown_routes:false},7],["cr:6943",["EventListenerImplForCacheStorage"],{__rc:["EventListenerImplForCacheStorage",null]},-1],["cr:1634616",["UserActivityBlue"],{__rc:["UserActivityBlue",null]},-1],["cr:5695",["EventListenerWWW"],{__rc:["EventListenerWWW",null]},-1],["cr:844180",["TimeSpentImmediateActiveSecondsLoggerBlue"],{__rc:["TimeSpentImmediateActiveSecondsLoggerBlue",null]},-1],["cr:1187159",["BlueCompatBroker"],{__rc:["BlueCompatBroker",null]},-1],["WebDevicePerfInfoData",[],{needsFullUpdate:true,needsPartialUpdate:false,shouldLogResourcePerf:false},3977],["WebStorageMonsterLoggingURI",[],{uri:"/ajax/webstorage/process_keys/?state=1"},3032],["BrowserPaymentHandlerConfig",[],{enabled:false},3904],["TimeSpentConfig",[],{delay:1000,timeout:64,"0_delay":0,"0_timeout":8},142],["cr:5800",[],{__rc:[null,null]},-1],["cr:1353359",["EventListenerImplForBlue"],{__rc:["EventListenerImplForBlue",null]},-1],["ImmediateActiveSecondsConfig",[],{sampling_rate:0},423]],require:[["BDClientSignalCollectionTrigger","startSignalCollection",[],[{sc:"{\"t\":1659080345,\"c\":[[30000,838801],[30001,838801],[30002,838801],[30003,838801],[30004,838801],[30005,838801],[30006,573585],[30007,838801],[30008,838801],[30012,838801],[30013,838801],[30015,806033],[30018,806033],[30021,540823],[30022,540817],[30040,806033],[30093,806033],[30094,806033],[30095,806033],[30101,541591],[30102,541591],[30103,541591],[30104,541591],[30106,806039],[30107,806039],[38000,541427],[38001,806643]]}",fds:60,fda:60,i:60,sbs:1,dbs:100,bbs:100,hbi:60,rt:262144,hbcbc:2,hbvbc:0,hbbi:30,sid:-1,hbv:"862167787228237364"}]],["NavigationMetrics","setPage",[],[{page:"XWebLoginController",page_type:"normal",page_uri:"https://www.facebook.com/login/",serverLID:"7370634494378061155"}]],["FalcoLoggerTransports","attach",[],[]],["Chromedome","start",[],[{}]],["DimensionTracking"],["ClickRefLogger"],["NavigationClickPointHandler"],["WebDevicePerfInfoLogging","doLog",[],[]],["WebStorageMonster","schedule",[],[]],["Artillery","disable",[],[]],["ScriptPathLogger","startLogging",[],[]],["TimeSpentBitArrayLogger","init",[],[]],["CookieCore","setWithoutChecksIfFirstPartyContext",[],["_js_datr","BcFJZpLs4emqzj2Mutl2khL5",34560000000,"/",true,".facebook.com"]],["TransportSelectingClientSingletonConditional"],["RequireDeferredReference","unblock",[],[["TransportSelectingClientSingletonConditional"],"sd"]],["RequireDeferredReference","unblock",[],[["TransportSelectingClientSingletonConditional"],"css"]]]},hsrp:{hsdp:{clpData:{"1871697":{r:1,s:1},"1829319":{r:1},"1829320":{r:1},"1843988":{r:1}},gkxData:{"21074":{result:false,hash:null}},qexData:{"526":{r:null},"538":{r:null},"543":{r:null}}},hblp:{consistency:{rev:1013617112},rsrcMap:{eTsIsUy:{type:"js",src:"https://static.xx.fbcdn.net/rsrc.php/v3i5Ln4/yX/l/zh_TW/w6Umr3PkLo-.js?_nc_x=Ij3Wp8lg5Kz",nc:1},PWvGUSc:{type:"js",src:"https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/R9MsQbdO8Qf.js?_nc_x=Ij3Wp8lg5Kz",nc:1}}}},allResources:["zPYlTyl","rAmuZxG","Tll2J5j","eTsIsUy","nWW62Q9","l9jZk4d","4FPDBxM","6n90fU2","V6Cxh+h","/UzGNHL","19hn+7X","PWvGUSc","ZfOstMb","9r+s+tq"]});}));
+  </script>
+ </body>
+</html>
