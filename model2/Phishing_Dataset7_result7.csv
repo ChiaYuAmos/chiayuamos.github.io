@@ -1,0 +1,15 @@
+url,prediction,score,url_length,domain_length,tld,has_ip,num_special_chars,has_https,has_www,pct_ext_hyperlinks,pct_ext_resource_urls,ext_favicon
+https://www.facebook.com/?locale=zh_TW,malicious,0.0900291837751865,38,16,com,0,3,1,1,0.0,0.0,0.0
+https://www.facebook.com/,malicious,0.0014361245848704,25,16,com,0,0,1,1,0.9791666666666666,0.0157068062827225,1.0
+https://tw.yahoo.com/,malicious,3.507290482521057,21,12,com,0,0,1,0,0.9921875,0.0732368896925858,1.0
+https://tw.news.yahoo.com/,malicious,2.8793784976005554,26,17,com,0,0,1,0,0.9966101694915256,0.0427397260273972,1.0
+https://www.southbankmosaics.com,malicious,0.0472557637840509,32,24,com,0,0,1,1,0.9724770642201837,0.1060070671378091,0.0
+https://www.uni-mainz.de,malicious,1.3445546755974648e-05,24,16,de,0,1,1,1,0.6666666666666666,0.3413173652694611,0.0
+https://www.aap.org,malicious,4.754503493131779e-06,19,11,org,0,0,1,1,0.996031746031746,0.0188848920863309,1.0
+https://www.faceb00k.com/?locale=zh_TW,malicious,0.0900291837751865,38,16,com,0,3,1,1,0.0,0.0,0.0
+https://www.facebook.c0m/,malicious,1.863722652196884,25,16,c0m,0,0,1,1,0.0,0.0,0.0
+https://www.religionenlibertad.com,malicious,0.0830697454512119,34,26,com,0,0,1,1,0.9966666666666668,0.0798418972332015,1.0
+http://www.ooguy.com,benign,8.653326034545898,20,13,com,0,0,0,1,0.8333333333333334,0.1694915254237288,0.0
+http://www.teramill.com,benign,9.999577403068542,23,16,com,0,0,0,1,0.95,0.0118343195266272,1.0
+http://www.kuradox92.lima-city.de,benign,10.0,33,26,de,0,1,0,1,0.0,0.0,0.0
+https://www.railway.gov.tw/tra-tip-web/tip/tip001/tip112/querybytime,malicious,1.9029592964879723e-13,68,18,tw,0,2,1,1,0.9978401727861771,0.007789678675754625,1.0
