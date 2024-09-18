@@ -8,22 +8,4 @@
     資料及來源：
         kaggle
 
-    size:0.25
-        Best parameters found for Gradient Boosting:  {'learning_rate': 0.2, 'max_depth': 6, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 300}
-        Random Forest Metrics:
-        Confusion Matrix:
-        [[1164   85]
-        [  81 1434]]
-        Accuracy: 93.99%
-        Precision: 94.40%
-        Recall: 94.65%
-        F1 Score: 94.53%
-        Gradient Boosting Metrics:
-        Confusion Matrix:
-        [[1170   79  ]
-        [  76 1439]]
-        Accuracy: 94.39%
-        Precision: 94.80%
-        Recall: 94.98%
-        F1 Score: 94.89%
 
