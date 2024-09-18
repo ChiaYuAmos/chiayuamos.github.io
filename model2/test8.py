@@ -1,21 +1,15 @@
 import pandas as pd
 import numpy as np
-import re
 from urllib.parse import urlparse
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report, confusion_matrix
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import Adam
 from bs4 import BeautifulSoup
 import requests
-import time
 from imblearn.over_sampling import SMOTE
-from sklearn.model_selection import cross_val_score
-from scikeras.wrappers import KerasClassifier
 from sklearn.impute import SimpleImputer
 
 # 讀取數據集
@@ -29,17 +23,18 @@ print(data.isnull().sum())
 def extract_features(url):
     parsed_url = urlparse(url)
     features = {
+        'url': url,
         'url_length': len(url),
         'domain_length': len(parsed_url.netloc),
         'tld': parsed_url.netloc.split('.')[-1] if '.' in parsed_url.netloc else '',
-        'has_ip': int(parsed_url.netloc.replace('.', '').isdigit()),  
+        'has_ip': int(parsed_url.netloc.replace('.', '').isdigit()),
         'num_special_chars': sum(not c.isalnum() and c not in ['.', ':', '/'] for c in url),
         'has_https': int(parsed_url.scheme == 'https'),
         'has_www': int('www.' in parsed_url.netloc),
-        'pct_ext_hyperlinks': 0.0,  
-        'pct_ext_resource_urls': 0.0,  
-        'ext_favicon': 0.0,  
-        'feedback': 5.0  # 預測時的 feedback 值為 5.0
+        'pct_ext_hyperlinks': 0.0,
+        'pct_ext_resource_urls': 0.0,
+        'ext_favicon': 0.0,
+        'feedback': 5.0
     }
     try:
         response = requests.get(url, timeout=5)
@@ -51,7 +46,7 @@ def extract_features(url):
                 'ext_favicon': int(bool(soup.find('link', rel='icon', href=True))),
             })
     except requests.exceptions.RequestException:
-        pass  
+        pass
     return features
 
 # 讀取經過特徵提取處理的數據
@@ -62,7 +57,7 @@ features_df = pd.get_dummies(features_df, columns=['tld'])
 
 # 分離特徵和標籤
 X = features_df.drop(columns=['url'])  # 不包括 'url' 欄位
-y = data['label'].apply(lambda x: 1 if x == 'malicious' else 0)  
+y = data['label'].apply(lambda x: 1 if x == 'malicious' else 0)
 
 # 查找數值欄位
 numeric_cols = X.select_dtypes(include=[np.number]).columns
@@ -70,9 +65,6 @@ numeric_cols = X.select_dtypes(include=[np.number]).columns
 # 對數值欄位進行均值填補
 imputer = SimpleImputer(strategy='mean')
 X[numeric_cols] = imputer.fit_transform(X[numeric_cols])
-
-# 在訓練集中加入 feedback 特徵，值為 10.0
-X['feedback'] = 10.0
 
 # 將數據分為訓練集和測試集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
@@ -111,25 +103,6 @@ print(confusion_matrix(y_test, y_pred))
 print("\n分類報告:")
 print(classification_report(y_test, y_pred))
 
-# 創建模型的函數，用於交叉驗證
-def create_model():
-    model = Sequential()
-    model.add(Dense(512, input_dim=X_train.shape[1], activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(256, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(128, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(1, activation='sigmoid'))
-    model.compile(optimizer=Adam(learning_rate=0.001), loss='binary_crossentropy', metrics=['accuracy'])
-    return model
-
-# 使用 KerasClassifier 進行交叉驗證
-classifier = KerasClassifier(model=create_model, epochs=75, batch_size=32, verbose=1)
-scores = cross_val_score(classifier, X_train, y_train, cv=5)
-
-print(f"交叉驗證得分: {scores}")
-print(f"平均交叉驗證得分: {np.mean(scores)}")
 model.save('phishing_detection_model.h5')
 
 # 預測 URL 的函數
@@ -137,7 +110,7 @@ def scale_prediction(prediction):
     return prediction * 10.0
 
 # 保存訓練過程中的特徵名稱
-feature_names = X.columns
+feature_names = X.columns.tolist()
 
 def predict_url(model, url, scaler, feature_names):
     features = extract_features(url)
@@ -145,24 +118,27 @@ def predict_url(model, url, scaler, feature_names):
 
     # Perform One-Hot Encoding on the 'tld' column
     features_df = pd.get_dummies(features_df, columns=['tld'])
-    
-    # Reindex the features dataframe to match the training features
-    missing_cols = [col for col in feature_names if col not in features_df.columns]
-    extra_cols = [col for col in features_df.columns if col not in feature_names]
-    
-    # 插入缺失的列並移除多餘的列
-    features_df = pd.concat([features_df, pd.DataFrame(0, index=features_df.index, columns=missing_cols)], axis=1)
-    features_df.drop(columns=extra_cols, inplace=True)
 
-    # 在新增特徵時，確保特徵數量與模型訓練時一致
+    # Add missing columns from feature_names
+    missing_cols = [col for col in feature_names if col not in features_df.columns]
+    for col in missing_cols:
+        features_df[col] = 0
+
+    # Remove extra columns not present in feature_names
+    extra_cols = [col for col in features_df.columns if col not in feature_names]
+    features_df.drop(extra_cols, axis=1, inplace=True)
+
+    # Reorder columns to match training feature set
     features_df = features_df.reindex(columns=feature_names, fill_value=0)
 
     # Scale the features
     features_scaled = scaler.transform(features_df)
-    
+
     # Make the prediction
     raw_prediction = model.predict(features_scaled)[0][0]
     scaled_prediction = scale_prediction(raw_prediction)
+    
+    # Handle potential NaN values
     if np.isnan(scaled_prediction):
         scaled_prediction = 0.0
     

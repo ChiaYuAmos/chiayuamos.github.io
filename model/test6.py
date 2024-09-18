@@ -13,6 +13,7 @@ from tensorflow.keras.optimizers import Adam
 from bs4 import BeautifulSoup
 import requests
 import time
+import os
 
 start_time = time.time()
 # 新的特徵提取函數
@@ -24,7 +25,6 @@ def extract_features(url):
         path = parsed_url.path
         query = parsed_url.query
         tld = hostname.split('.')[-1] if '.' in hostname else ''
-
         features = {
             'url_length': len(url),
             'domain_length': len(parsed_url.netloc),
@@ -65,6 +65,7 @@ def extract_features(url):
             'relative_form_action': 0,
             'ext_form_action': 0,
             'abnormal_form_action': 0,
+            # 'feedback':5.0
         }
 
         try:
@@ -90,98 +91,207 @@ def extract_features(url):
         print(f"Error processing URL {url}: {e}")
         return {}
 # 讀取數據
-data = pd.read_csv('Phishing_Dataset.csv', encoding='utf-8')
+def model(random_states,learning_rate,epochs,i):
+    data = pd.read_csv('Phishing_Dataset.csv', encoding='utf-8')
+    # 特徵提取並建立特徵數據框
+    # features = data['url'].apply(lambda x: extract_features(str(x)))
+    # features_df = pd.DataFrame(features.tolist())
+    # features_df.to_csv('Phishing_Dataset4_features.csv', index=False, encoding='utf-8')
+    features_df = pd.read_csv('Phishing_Dataset6_features_2.csv')
+    # print(features_df)
+    # 處理 TLD 特徵（使用 One-Hot Encoding）
+    features_df = pd.get_dummies(features_df, columns=['tld'])
+    # 準備數據
+    X = features_df
+    y = data['label'].apply(lambda x: 1 if x == 'malicious' else 0)  # 轉換標籤為二元格式
+    # 分割數據集
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state = random_states )
 
-# 特徵提取並建立特徵數據框
-# features = data['url'].apply(lambda x: extract_features(str(x)))
-# features_df = pd.DataFrame(features.tolist())
-# features_df.to_csv('Phishing_Dataset4_features.csv', index=False, encoding='utf-8')
-features_df = pd.read_csv('Phishing_Dataset6_features.csv')
-print(features_df)
-print("1")
+    # 移除 'url' 列和其他可能與 URL 直接相關的列
+    # columns_to_remove = ['url']
+    # X_train = X_train.drop(columns_to_remove, axis=1)
+    # X_test = X_test.drop(columns_to_remove, axis=1)
+    # print(X_train.dtypes)
+    # quit()
+    # 標準化數據
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
+    from sklearn.impute import SimpleImputer
 
-# 處理 TLD 特徵（使用 One-Hot Encoding）
-features_df = pd.get_dummies(features_df, columns=['tld'])
-print("2")
+    # 檢查 NaN 值
+    # print("NaN values in X_train:", np.isnan(X_train).sum())
+    # print("NaN values in X_test:", np.isnan(X_test).sum())
 
-# 準備數據
-X = features_df
-y = data['label'].apply(lambda x: 1 if x == 'malicious' else 0)  # 轉換標籤為二元格式
-print("3")
-
-# 分割數據集
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-print("4")
-
-# 標準化數據
-scaler = StandardScaler()
-X_train = scaler.fit_transform(X_train)
-X_test = scaler.transform(X_test)
-print("5")
-
-# 建立 MLP 模型
-model = Sequential()
-model.add(Dense(512, input_dim=X_train.shape[1], activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(256, activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(128, activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(128, activation='relu'))
-model.add(Dropout(0.5))
-model.add(Dense(1, activation='sigmoid'))
-print("6")
-
-# 編譯模型
-model.compile(optimizer=Adam(learning_rate=0.0001), loss='binary_crossentropy', metrics=['accuracy'])
-print("7")
-
-# 訓練模型
-history = model.fit(X_train, y_train, epochs=100, batch_size=32, validation_split=0.2, verbose=1)
-print("8")
-
-# 預測
-y_pred = (model.predict(X_test) > 0.5).astype(int).flatten()
-
-# 評估模型
-print("Confusion Matrix:")
-print(confusion_matrix(y_test, y_pred))
-print("\nClassification Report:")
-print(classification_report(y_test, y_pred))
+    # 使用 SimpleImputer 填充 NaN 值
+    imputer = SimpleImputer(strategy='most_frequent')  # 或者使用 'median' 或 'most_frequent'
+    X_train = imputer.fit_transform(X_train)
+    X_test = imputer.transform(X_test)
+    # print(X_train.shape)
+    # quit()
+    # X_train = X_train[:, np.isnan(X_train).sum(axis=0) == 0]
+    # X_test = X_test[:, np.isnan(X_test).sum(axis=0) == 0]
 
 
+    # 再次檢查 NaN 值
+    print("NaN values in X_train after imputation:", np.isnan(X_train).sum())
+    print("NaN values in X_test after imputation:", np.isnan(X_test).sum())
+
+    # # 檢查無窮大值
+    # print("Inf values in X_train:", np.isinf(X_train).sum())
+    # print("Inf values in X_test:", np.isinf(X_test).sum())
+
+    # 建立 MLP 模型
+
+    from tensorflow.keras.layers import BatchNormalization
+    from keras.regularizers import l2
+    model = Sequential()
+    model.add(Dense(8, input_dim=X_train.shape[1], activation='relu'))
+    model.add(BatchNormalization())
+    model.add(Dropout(0.6))
+    model.add(Dense(4, activation='relu', kernel_regularizer=l2(0.04)))
+    model.add(Dropout(0.5))  
+    model.add(Dense(4, activation='relu', kernel_regularizer=l2(0.04)))
+    model.add(Dropout(0.5))  
+    model.add(Dense(1, activation='sigmoid'))
+
+    # 編譯模型
+    # model.compile(optimizer=Adam(learning_rate=0.00005), loss='binary_crossentropy', metrics=['accuracy'])
+    model.compile(optimizer=Adam(learning_rate), loss='binary_crossentropy', metrics=['accuracy'])
+
+    from keras.callbacks import ReduceLROnPlateau
+    reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=5,verbose=1)
+    from keras.callbacks import EarlyStopping
+    early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+    # history = model.fit(X_train, y_train, epoch=epochs, batch_size=32, validation_split=0.2, callbacks=[reduce_lr, early_stopping], verbose=1)
+    history = model.fit(X_train, y_train, epochs=epochs, batch_size=32, validation_split=0.2, callbacks=[reduce_lr, early_stopping], verbose=1)
+    # early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
+    # history = model.fit(X_train, y_train, epochs=50, batch_size=32, validation_split=0.2, callbacks=[reduce_lr, early_stopping], verbose=1)
+    from tensorflow.keras.utils import plot_model
+    plot_model(model, to_file='mlp_model.png', show_shapes=True, show_layer_names=True)
+    # 預測
+    y_pred = (model.predict(X_test) > 0.5).astype(int).flatten()
+
+    from sklearn.metrics import confusion_matrix, classification_report
+    y_pred = (model.predict(X_test) > 0.5).astype(int).flatten()
+    
+    # 儲存 Confusion Matrix 和 Classification Report 到檔案
+    name = f"第{i}次/"
+    directory = "test5/" + name
+    # 確保目錄存在
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    with open("test5/"+name+'confusion_matrix.txt', 'w') as f:
+        f.write("Confusion Matrix:\n")
+        f.write(str(confusion_matrix(y_test, y_pred)))
+    
+    with open("test5/"+name+'classification_report.txt', 'w') as f:
+        f.write(name+"Classification Report:\n")
+        f.write(classification_report(y_test, y_pred))
+    
+    # 顯示 Confusion Matrix 和 Classification Report
+    print("Confusion Matrix:")
+    print(confusion_matrix(y_test, y_pred))
+    print("\nClassification Report:")
+    print(classification_report(y_test, y_pred))
+    
+    # 繪製訓練與驗證的損失與準確率，並將圖像儲存起來
+    import matplotlib.pyplot as plt
+    plt.rcParams['font.family'] = 'Arial'
+    
+    # 繪製訓練與驗證的損失
+    plt.figure()
+    plt.plot(history.history['loss'], label='training_loss')
+    plt.plot(history.history['val_loss'], label='test_loss')
+    plt.title('LOSS')
+    plt.xlabel('Epochs')
+    plt.ylabel('loss')
+    plt.legend()
+    plt.savefig(f"test5/"+name+'loss_plot.png')  # 儲存損失圖像
+    # plt.show()
+
+    # 繪製訓練與驗證的準確率
+    plt.figure()
+    plt.plot(history.history['accuracy'], label='training_accuracy')
+    plt.plot(history.history['val_accuracy'], label='test_accuracy')
+    plt.title('Accuracy')
+    plt.xlabel('Epochs')
+    plt.ylabel('accuracy')
+    plt.legend()
+    plt.savefig("test5/"+name+'accuracy_plot.png')  # 儲存準確率圖像
+    # plt.show()
+
+i = 0
+for random_state in range(40,1400,10):
+    for learning_rate in range(5,50,5):
+        for epochs in range(20,40,5):     
+            i+=1
+            model(random_state,learning_rate/10000000,epochs,i)
+# 查看權重
+# for layer in model.layers:
+#     weights = layer.get_weights()
+#     print(f"Layer: {layer.name}")
+#     for i, weight in enumerate(weights):
+#         print(f"  Weight {i}: shape {weight.shape}")
+#         print(f"  {weight}\n")
 quit()
-# 預測新的網址
+
+def scale_prediction(prediction):
+    return prediction * 10.0
+
+# quit()
 def predict_url(model, url, scaler):
+    # 提取 URL 的特徵
     features = extract_features(url)
     features_df = pd.DataFrame([features])
+    # features_df = features_df.drop(columns=['url'])
+    # 移除不必要的欄位 'url'
+    if 'url' in features_df.columns:
+        features_df = features_df.drop(columns=['url'])
+    # 對 'tld' 進行 one-hot 編碼
     features_df = pd.get_dummies(features_df, columns=['tld'])
-    # 確保列一致，填補缺失的列
+    # 確保列名與訓練模型時的一致，缺失特徵填補為 0
     features_df = features_df.reindex(columns=X.columns, fill_value=0)
+    # 進行標準化
+    print(features_df)
     features_scaled = scaler.transform(features_df)
-    prediction = model.predict(features_scaled)
-    return 'malicious' if prediction > 0.5 else 'benign'
+    # 預測結果
+    raw_prediction = model.predict(features_scaled)[0][0]
+    # 將預測結果進行縮放
+    scaled_prediction = scale_prediction(raw_prediction)
+    # 處理 NAN 的情況
+    if np.isnan(scaled_prediction):
+        scaled_prediction = 0.0
 
+    return features, scaled_prediction
+
+# 測試網址列表
 true_website = []
 phishing_website = []
-# 測試網址
+
 with open("0_testwebsite", 'r', encoding='utf-8') as file:
     test_urls = file.read().split("\n")
 
-# 過濾無效的URL
+# 過濾無效的 URL
 urls_to_test = [url for url in test_urls if url and url not in ['True Website', 'Phishing Website', '']]
 
 # 打印預測結果
+results = []
 for url in urls_to_test:
-    result = predict_url(model, url, scaler)
-    if result == "malicious":
-        phishing_website.append(url)
-    else:
-        true_website.append(url)
-    print(f"URL: {url}\nPrediction: {result}\n")
+    features, prediction = predict_url(model, url, scaler)
+    result = {
+        'url': url,
+        'prediction': 'malicious' if prediction < 5.0 else 'benign',  # 分數低於 5.0 的是釣魚網站
+        'score': prediction  # 添加預測分數
+    }
+    result.update(features)  # 更新特徵信息
+    results.append(result)
+    print(f"URL: {url}\nPrediction: {result['prediction']}\nScore: {result['score']}\nFeatures: {features}\n")
 
-print("True Website:\n", "\t\n".join(true_website))
-print("Phishing Website:\n", "\t\n".join(phishing_website))
+# 將結果存儲到 CSV
+results_df = pd.DataFrame(results)
+results_df.to_csv('Phishing_Dataset5_result5.csv', index=False, encoding='utf-8')
 
+# 記錄時間
 end_time = time.time()
 print(end_time - start_time)

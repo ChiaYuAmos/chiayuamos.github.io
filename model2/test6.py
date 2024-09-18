@@ -27,10 +27,19 @@ def extract_features(url):
         tld = hostname.split('.')[-1] if '.' in hostname else ''
 
         features = {
+            'url_length': len(url),
+            'domain_length': len(parsed_url.netloc),
+            'tld': parsed_url.netloc.split('.')[-1] if '.' in parsed_url.netloc else '',
+            'has_ip': int(parsed_url.netloc.replace('.', '').isdigit()),  # 判斷是否有 IP 地址
+            'num_special_chars': sum(not c.isalnum() and c not in ['.', ':', '/'] for c in url),
+            'has_https': int(parsed_url.scheme == 'https'),
+            'has_www': int('www.' in parsed_url.netloc),
+            'pct_ext_hyperlinks': 0.0,
+            'pct_ext_resource_urls': 0.0,
+            'ext_favicon': 0.0,
             'num_dots': hostname.count('.'),
             'subdomain_level': hostname.count('.') - 1,
             'path_level': path.count('/'),
-            'url_length': len(url),
             'num_dash': url.count('-'),
             'num_dash_in_hostname': hostname.count('-'),
             'at_symbol': int('@' in url),
@@ -53,10 +62,6 @@ def extract_features(url):
             'double_slash_in_path': int('//' in path),
             'num_sensitive_words': sum(word in url for word in ['secure', 'account', 'update', 'login']),
             'embedded_brand_name': int(any(brand in hostname for brand in ['facebook', 'google', 'paypal'])),
-            'tld': tld,
-            'pct_ext_hyperlinks': 0,
-            'pct_ext_resource_urls': 0,
-            'ext_favicon': 0,
             'insecure_forms': 0,
             'relative_form_action': 0,
             'ext_form_action': 0,
@@ -86,7 +91,8 @@ def extract_features(url):
         print(f"Error processing URL {url}: {e}")
         return {}
 
-data = pd.read_csv('Phishing_Dataset2.csv')
+# 讀取數據集
+data = pd.read_csv('Phishing_Dataset.csv')
 print("1")
 
 # 提取特徵並建立特徵數據框

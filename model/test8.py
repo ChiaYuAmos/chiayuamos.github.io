@@ -118,7 +118,6 @@ def predict_url(model, url, scaler, feature_names):
 
     # Perform One-Hot Encoding on the 'tld' column
     features_df = pd.get_dummies(features_df, columns=['tld'])
-
     # Add missing columns from feature_names
     missing_cols = [col for col in feature_names if col not in features_df.columns]
     if missing_cols:

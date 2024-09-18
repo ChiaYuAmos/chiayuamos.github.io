@@ -107,25 +107,6 @@ print(confusion_matrix(y_test, y_pred))
 print("\n分類報告:")
 print(classification_report(y_test, y_pred))
 
-# 交叉驗證
-# def create_model():
-#     model = Sequential()
-#     model.add(Dense(512, input_dim=X_train.shape[1], activation='relu'))
-#     model.add(Dropout(0.5))
-#     model.add(Dense(256, activation='relu'))
-#     model.add(Dropout(0.5))
-#     model.add(Dense(128, activation='relu'))
-#     model.add(Dropout(0.5))
-#     model.add(Dense(1, activation='sigmoid'))
-#     model.compile(optimizer=Adam(learning_rate=0.001), loss='binary_crossentropy', metrics=['accuracy'])
-#     return model
-
-# classifier = KerasClassifier(model=create_model, epochs=75, batch_size=32, verbose=1)
-# scores = cross_val_score(classifier, X_train, y_train, cv=5)
-
-# print(f"交叉驗證得分: {scores}")
-# print(f"平均交叉驗證得分: {np.mean(scores)}")
-
 def scale_prediction(prediction):
     return prediction * 10.0
 
@@ -172,6 +153,7 @@ results_df.to_csv('Phishing_Dataset7_result7.csv', index=False, encoding='utf-8'
 print("True Website:\n", "\t\n".join([r['url'] for r in results if r['prediction'] == 'benign']))
 print("\nPhishing Website:\n", "\t\n".join([r['url'] for r in results if r['prediction'] == 'malicious']))
 
+# 預測函數，檢查URL是否已在結果文件中存在
 def predict_url_2(model, url, scaler):
     # Check if the result file exists, if not, create an empty DataFrame
     results_df = pd.read_csv('Phishing_Dataset7_result7.csv')
@@ -203,10 +185,9 @@ def predict_url_2(model, url, scaler):
         # print(f"URL: {url} 預測為: {result['prediction']}，分數: {result['score']}")
         return result
 
-# Interactive mode for URL input
-while True:
-    url = input("Input URL or Exit: ")
-    if url.lower() == "exit":
-        break
-    result = predict_url_2(model, url, scaler)
-    print(f"URL: {url}\nPrediction: {result['prediction']}\nScore: {result['score']}\nFeatures: {result}\n")
+# # Interactive mode for URL input
+# while True:
+#     url = input("Input URL or Exit: ")
+#     if url.lower() == "exit":
+#         break
+#     result = predict_url_2(model, url
