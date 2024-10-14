@@ -1,0 +1,16 @@
+url,prediction,score,url_length,domain_length,tld,has_ip,num_special_chars,has_https,has_www,pct_ext_hyperlinks,pct_ext_resource_urls,ext_favicon,num_dots,subdomain_level,path_level,num_dash,num_dash_in_hostname,at_symbol,tilde_symbol,num_underscore,num_percent,num_query_components,num_ampersand,num_hash,num_numeric_chars,no_https,random_string,ip_address,domain_in_subdomains,domain_in_paths,https_in_hostname,hostname_length,path_length,query_length,double_slash_in_path,num_sensitive_words,embedded_brand_name,insecure_forms,relative_form_action,ext_form_action,abnormal_form_action,feedback
+https://worktile.com/kb/ask/551054.html,malicious,4.785318076610565,39,12,com,0,0,1,0,0.993103448275862,0.084045584045584,1.0,1,0,3,0,0,0,0,0,0,0,0,0,6,0,0,0,1,0,0,12,19,0,0,0,0,0,0,1,0,5.0
+https://blog.csdn.net/weixin_45501219/article/details/136873493,benign,5.031326115131378,63,13,net,0,1,1,0,0.0,0.0,0.0,2,1,4,0,0,0,0,1,0,0,0,0,17,0,0,0,1,0,0,13,42,0,0,0,0,0,0,0,0,5.0
+https://www.facebook.com/,malicious,4.770633578300476,25,16,com,0,0,1,1,0.979591836734694,0.015625,1.0,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,16,1,0,0,0,1,0,1,1,0,5.0
+https://www.aap.org,malicious,4.423760026693344,19,11,org,0,0,1,1,0.99601593625498,0.0189189189189189,1.0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,11,0,0,0,0,0,0,0,0,0,5.0
+https://www.uni-mainz.de,malicious,4.873528331518173,24,16,de,0,1,1,1,0.6666666666666666,0.35625,0.0,2,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,5.0
+https://tw.news.yahoo.com/,malicious,4.693070203065872,26,17,com,0,0,1,0,0.996551724137931,0.0424028268551236,1.0,3,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,17,1,0,0,0,0,0,0,0,0,5.0
+http://www.teramill.com,benign,5.359240174293518,23,16,com,0,0,0,1,0.95,0.0118343195266272,1.0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,16,0,0,0,0,0,0,0,1,0,5.0
+https://www.facebook.c0m/,benign,5.086056292057037,25,16,c0m,0,0,1,1,0.0,0.0,0.0,2,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,16,1,0,0,0,1,0,0,0,0,5.0
+https://www.faceb00k.com/?locale=zh_TW,malicious,4.639700353145599,38,16,com,0,3,1,1,0.0,0.0,0.0,2,1,1,0,0,0,0,1,0,1,0,0,2,0,0,0,1,0,0,16,1,12,0,0,0,0,0,0,0,5.0
+http://www.ooguy.com,malicious,4.917068779468536,20,13,com,0,0,0,1,0.8333333333333334,0.1694915254237288,0.0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,13,0,0,0,0,0,0,0,0,0,5.0
+https://www.southbankmosaics.com,malicious,4.152423292398453,32,24,com,0,0,1,1,0.9724770642201837,0.1060070671378091,0.0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,24,0,0,0,0,0,0,0,0,0,5.0
+https://www.canva.com/design/DAGX9vxZYFo/FHZVO1DH2XwMQpTaLpW1rw/edit,benign,5.294312953948975,68,13,com,0,0,1,1,0.0,0.0,0.0,2,1,4,0,0,0,0,0,0,0,0,0,4,0,0,0,1,0,0,13,47,0,0,0,0,0,0,0,0,6.5
+http://localhost:5050/tool.html,benign,6.362951397895813,31,14,,0,0,0,0,0.0,0.0,0.0,0,-1,1,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,14,10,0,0,0,0,0,0,0,0,5.0
+http://10.99.70.1/admin/challenges,benign,5.374332666397095,34,10,1,1,0,0,0,0.0,0.0,0.0,3,2,2,0,0,0,0,0,0,0,0,0,7,1,0,1,0,0,0,10,17,0,0,0,0,0,0,0,0,5.0
+http://localhost:5050/report.html,benign,6.057985961437225,33,14,,0,0,0,0,0.0,0.0,0.0,0,-1,1,0,0,0,0,0,0,0,0,0,4,1,0,0,0,0,0,14,12,0,0,0,0,0,0,0,0,5.5

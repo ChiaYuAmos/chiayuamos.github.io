@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* 淡藍色背景 */
+}
+
+.container {
+    text-align: center; /* 將 .container 中的所有內容置中 */
+}
+
+.form-group {
+    display: inline-block; /* 讓 form-group 的寬度適應內容，並與父容器對齊 */
+    text-align: left; /* 如果要讓 form 中的文字保持左對齊，可加此屬性 */
+}
+
+h1 {
+    margin-bottom: 20px; /* 增加 h1 標題與其他元素的間距 */
+}
+
+.description2 {
+    margin-top: 20px;
+    width: 100%;
+    color: #555;
+    font-size: 14px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
+.description {
+    margin-top: 10px;
+    width: 100%;
+    color: #555;
+    font-size: 14px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.options {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-button {
+    padding: 20px;
+    width: 150px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff59d; /* 淡黃色，類似便利貼 */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    color: #424242;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.option-button:hover {
+    background-color: #ffe082;
+}
+
+.description {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+    max-width: 160px;
+    padding: 10px;
+    border: 1px solid #424242; /* 黑色框線 */
+    border-radius: 5px;
+}
